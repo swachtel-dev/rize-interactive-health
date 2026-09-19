@@ -3,6 +3,18 @@
   "generated": "2026-09-18",
   "pages": [
     {
+      "id": "CANARY-deliberate-break",
+      "url": "https://swachtel-dev.github.io/rize-interactive-health/this-page-does-not-exist.html",
+      "courses": [
+        "CANARY \u2014 deliberate test, remove after"
+      ],
+      "owner": "swachtel-dev",
+      "source": "manual-test",
+      "expect": {
+        "minVisibleText": 300
+      }
+    },
+    {
       "id": "macro-batting-cage",
       "url": "https://swachtel-dev.github.io/macro-batting-cage/",
       "courses": [
