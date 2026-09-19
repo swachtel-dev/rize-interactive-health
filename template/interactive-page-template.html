@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What the derivative measures — Rize interactive page template</title>
+<!--
+  ===================================================================
+  RIZE INTERACTIVE PAGE TEMPLATE
+  ===================================================================
+  A Khan-Academy-style article: prose, an interactive visual, and
+  comprehension checks that correct misconceptions on the spot.
+
+  Copy this file, replace the content, keep three things:
+
+    1. selfcheck.js (inlined below)  -- the health-check harness
+    2. the SelfCheck.register(...) calls at the bottom
+    3. no external CDN dependencies  -- everything vendored or inline
+
+  The self-checks are what let the automated checker tell "working"
+  from "loads but is silently empty". Write one per thing that would
+  make a student stuck if it broke. See SELFCHECK.md.
+  ===================================================================
+-->
+<style>
+  :root{
+    color-scheme:light dark;
+    --bg:#fbfaf8; --card:#fff; --ink:#1a1a18; --muted:#5d5a54; --line:#e4e0d8;
+    --accent:#2b4a8b; --accent-ink:#fff; --ok:#1f6b41; --bad:#a3291c;
+    --ok-bg:#e8f4ec; --bad-bg:#fbeae8;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#15151a; --card:#1e1e25; --ink:#edecef; --muted:#adaab4; --line:#32323d;
+    --accent:#9fb6ed; --accent-ink:#15151a; --ok:#7fd4a0; --bad:#f09184;
+    --ok-bg:#16301f; --bad-bg:#37191a;
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.65 Georgia,"Iowan Old Style",serif;}
+  .wrap{max-width:44rem;margin:0 auto;padding:2rem 1.25rem 5rem}
+  h1,h2,h3,.ui{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  h1{font-size:1.9rem;line-height:1.2;letter-spacing:-.015em;margin:0 0 .5rem}
+  h2{font-size:1.25rem;margin:2.5rem 0 .75rem}
+  .lede{color:var(--muted);font-size:1.05rem;margin:0 0 2rem}
+  .skip-link{position:absolute;left:-9999px;top:0;background:var(--accent);
+    color:var(--accent-ink);padding:.7rem 1rem;z-index:10;border-radius:0 0 6px 0}
+  .skip-link:focus{left:0}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+  /* ---- interactive figure ---- */
+  figure{margin:2rem 0;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:1.25rem}
+  figure svg{width:100%;height:auto;display:block}
+  .controls{display:flex;align-items:center;gap:.9rem;margin-top:1rem;flex-wrap:wrap}
+  .controls label{font-size:.9rem;font-weight:600}
+  .controls input[type=range]{flex:1;min-width:11rem;min-height:24px;accent-color:var(--accent)}
+  .readout{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem;
+    background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:.25rem .55rem}
+  figcaption{font-size:.9rem;color:var(--muted);margin-top:1rem;line-height:1.5}
+
+  /* ---- comprehension check ---- */
+  .check{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:10px;padding:1.25rem 1.35rem;margin:2rem 0}
+  .check h3{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 .6rem}
+  .check fieldset{border:0;margin:0;padding:0}
+  .check legend{font-weight:600;font-size:1.02rem;margin-bottom:.75rem;padding:0}
+  .check .opt{display:block;margin:0 0 .1rem}
+  .check .opt label{display:flex;gap:.65rem;align-items:flex-start;cursor:pointer;
+    padding:.5rem .6rem;border-radius:7px;min-height:24px}
+  .check .opt label:hover{background:var(--bg)}
+  .check input[type=radio]{margin-top:.35rem;min-width:18px;min-height:18px;accent-color:var(--accent)}
+  .check button{font:600 .95rem/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
+    margin-top:.9rem;padding:.65rem 1.2rem;min-height:44px;border:0;border-radius:7px;
+    background:var(--accent);color:var(--accent-ink);cursor:pointer}
+  .check button:hover{filter:brightness(1.1)}
+  .feedback{margin-top:.9rem;padding:.8rem 1rem;border-radius:8px;font-size:.95rem;line-height:1.55}
+  .feedback:empty{display:none}
+  .feedback.right{background:var(--ok-bg);color:var(--ok);border:1px solid currentColor}
+  .feedback.wrong{background:var(--bad-bg);color:var(--bad);border:1px solid currentColor}
+  .feedback .tag{font-weight:700;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+  footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.85rem;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="wrap">
+<header>
+  <h1>What the derivative actually measures</h1>
+  <p class="lede">Before the rules, the idea: a derivative is a slope you sneak up on.</p>
+</header>
+
+<main id="main-content">
+
+  <p>Pick two points on a curve and draw the straight line through them. That line is a
+  <strong>secant</strong>, and its slope tells you the average rate of change between the two
+  points. Nothing mysterious: rise over run, the same slope you have computed since algebra.</p>
+
+  <p>Now slide the second point toward the first. The secant pivots. The average rate of change
+  it reports is measured over a shorter and shorter interval, so it describes the curve closer and
+  closer to that one spot. The derivative is the number that slope is heading toward.</p>
+
+  <h2>Watch the secant become the tangent</h2>
+
+  <figure>
+    <svg id="curve" viewBox="0 0 420 260" role="img"
+         aria-labelledby="curve-title" aria-describedby="curve-desc">
+      <title id="curve-title">The curve y equals x squared with a secant line through two points</title>
+      <g stroke="var(--line)" stroke-width="1">
+        <line x1="40" y1="230" x2="400" y2="230"></line>
+        <line x1="40" y1="230" x2="40" y2="20"></line>
+      </g>
+      <path id="parabola" fill="none" stroke="var(--muted)" stroke-width="2"></path>
+      <line id="secant" stroke="var(--accent)" stroke-width="2.5"></line>
+      <circle id="ptA" r="5" fill="var(--accent)"></circle>
+      <circle id="ptB" r="5" fill="var(--accent)" fill-opacity="0.45"></circle>
+    </svg>
+
+    <div class="controls ui">
+      <label for="gap">Distance between the two points (h)</label>
+      <input type="range" id="gap" min="0.05" max="2" step="0.05" value="2"
+             aria-describedby="slope-readout">
+      <output class="readout" id="slope-readout" for="gap"></output>
+    </div>
+
+    <p class="sr-only" id="curve-live" aria-live="polite"></p>
+
+    <figcaption id="curve-desc">
+      The curve is y = x². The first point sits at x = 1, where the true slope is 2. The second
+      point sits h to its right. As you shrink h, the slope of the line through the two points
+      moves from 4 toward 2: at h = 2 it reads 4, at h = 0.5 it reads 2.5, at h = 0.05 it reads
+      2.05. It never quite arrives, which is exactly why we need a limit.
+    </figcaption>
+  </figure>
+
+  <section class="check" data-check="q1">
+    <h3>Check your understanding</h3>
+    <fieldset>
+      <legend>At h = 0.5, the secant slope reads 2.5, but the derivative at x = 1 is 2. Why the gap?</legend>
+      <div class="opt"><label><input type="radio" name="q1" value="a">
+        The secant slope is an average over an interval, and the interval still has width.</label></div>
+      <div class="opt"><label><input type="radio" name="q1" value="b">
+        The drawing is imprecise, so the number is slightly off.</label></div>
+      <div class="opt"><label><input type="radio" name="q1" value="c">
+        The derivative is only an estimate of the secant slope.</label></div>
+    </fieldset>
+    <button type="button" data-grade="q1">Check answer</button>
+    <p class="feedback" role="status" aria-live="polite" id="fb-q1"></p>
+  </section>
+
+  <h2>Why "limit" and not just "plug in zero"</h2>
+
+  <p>Setting h to zero directly gives you 0/0, which is not a number. The limit is the tool that
+  lets you ask what the quotient approaches without ever evaluating it at the forbidden point.</p>
+
+  <section class="check" data-check="q2">
+    <h3>Check your understanding</h3>
+    <fieldset>
+      <legend>What goes wrong if you substitute h = 0 into the difference quotient before simplifying?</legend>
+      <div class="opt"><label><input type="radio" name="q2" value="a">
+        You get 0/0, which is undefined, so the expression tells you nothing yet.</label></div>
+      <div class="opt"><label><input type="radio" name="q2" value="b">
+        You get zero, so the derivative of every function would be zero.</label></div>
+      <div class="opt"><label><input type="radio" name="q2" value="c">
+        Nothing goes wrong; substituting zero is the standard method.</label></div>
+    </fieldset>
+    <button type="button" data-grade="q2">Check answer</button>
+    <p class="feedback" role="status" aria-live="polite" id="fb-q2"></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Rize interactive page template. Replace this content; keep the self-check harness.</p>
+</footer>
+</div>
+
+<script>
+/* ===================================================================
+   selfcheck.js -- the health-check harness. Copy this block verbatim.
+   Pages register named checks; the automated checker calls
+   window.__selfCheck() and fails the build if any check returns false.
+   =================================================================== */
+window.SelfCheck = (function () {
+  const checks = [];
+  return {
+    register(name, fn) { checks.push({ name, fn }); },
+    async run() {
+      const out = [];
+      for (const c of checks) {
+        try {
+          const r = await c.fn();
+          if (r === true || r === undefined) out.push({ name: c.name, ok: true });
+          else if (r === false) out.push({ name: c.name, ok: false, detail: 'returned false' });
+          else out.push({ name: c.name, ok: !!r.ok, detail: r.detail });
+        } catch (e) {
+          out.push({ name: c.name, ok: false, detail: String(e) });
+        }
+      }
+      return { ok: out.every((c) => c.ok), checks: out };
+    },
+  };
+})();
+window.__selfCheck = () => window.SelfCheck.run();
+</script>
+
+<script>
+/* ---------------- the interactive figure ---------------- */
+const f = (x) => x * x;
+const X0 = 1, SX = (x) => 40 + x * 110, SY = (y) => 230 - y * 42;
+
+const parabola = document.getElementById('parabola');
+const secant = document.getElementById('secant');
+const ptA = document.getElementById('ptA');
+const ptB = document.getElementById('ptB');
+const gap = document.getElementById('gap');
+const readout = document.getElementById('slope-readout');
+const live = document.getElementById('curve-live');
+
+function drawCurve() {
+  let d = '';
+  for (let x = 0; x <= 3.2; x += 0.05) d += (d ? 'L' : 'M') + SX(x) + ' ' + SY(f(x));
+  parabola.setAttribute('d', d);
+}
+
+function update() {
+  const h = Number(gap.value);
+  const slope = (f(X0 + h) - f(X0)) / h;
+  const ax = SX(X0), ay = SY(f(X0)), bx = SX(X0 + h), by = SY(f(X0 + h));
+  // Extend the line past both points so it reads as a line, not a segment.
+  const dx = bx - ax, dy = by - ay, k = 90 / Math.hypot(dx, dy);
+  secant.setAttribute('x1', ax - dx * k); secant.setAttribute('y1', ay - dy * k);
+  secant.setAttribute('x2', bx + dx * k); secant.setAttribute('y2', by + dy * k);
+  ptA.setAttribute('cx', ax); ptA.setAttribute('cy', ay);
+  ptB.setAttribute('cx', bx); ptB.setAttribute('cy', by);
+  readout.textContent = 'h = ' + h.toFixed(2) + '   slope = ' + slope.toFixed(3);
+  live.textContent = 'With h of ' + h.toFixed(2) + ', the secant slope is ' + slope.toFixed(3)
+    + ', heading toward the true derivative of 2.';
+  return slope;
+}
+
+drawCurve();
+gap.addEventListener('input', update);
+update();
+
+/* ---------------- comprehension checks ---------------- */
+const ANSWERS = {
+  q1: {
+    correct: 'a',
+    feedback: {
+      a: 'Right. A secant slope is an average rate of change across an interval of width h. Shrinking h shrinks the gap, and the limit closes it.',
+      b: 'Not quite. The number is exact, not a drawing artifact: at h = 0.5 the average slope genuinely is 2.5. The gap is real, and it closes only as h goes to zero.',
+      c: 'Reversed. The secant slope is the approximation; the derivative is the exact value it approaches.',
+    },
+  },
+  q2: {
+    correct: 'a',
+    feedback: {
+      a: 'Right. Both numerator and denominator go to zero, and 0/0 is undefined. Simplify first, then let h approach zero.',
+      b: 'Not quite. You do not get zero, you get 0/0, which is undefined rather than equal to any number.',
+      c: 'Not quite. Substituting zero straight away gives 0/0. The algebra has to come first.',
+    },
+  },
+};
+
+function grade(q) {
+  const picked = document.querySelector('input[name="' + q + '"]:checked');
+  const fb = document.getElementById('fb-' + q);
+  if (!picked) {
+    fb.className = 'feedback wrong';
+    fb.innerHTML = '<span class="tag">Pick an answer</span> Choose one of the options above, then check.';
+    return null;
+  }
+  const right = picked.value === ANSWERS[q].correct;
+  fb.className = 'feedback ' + (right ? 'right' : 'wrong');
+  fb.innerHTML = '<span class="tag">' + (right ? 'Correct.' : 'Not yet.') + '</span> '
+    + ANSWERS[q].feedback[picked.value];
+  return right;
+}
+
+document.querySelectorAll('[data-grade]').forEach((b) =>
+  b.addEventListener('click', () => grade(b.dataset.grade)));
+
+/* ===================================================================
+   SELF-CHECKS
+   One per thing that would leave a student stuck if it broke.
+   Keep them cheap and side-effect-free from the student's point of view
+   (this page resets what it touches).
+   =================================================================== */
+SelfCheck.register('curve renders', () => {
+  const d = parabola.getAttribute('d') || '';
+  return d.length > 100 || { ok: false, detail: 'parabola path is empty' };
+});
+
+SelfCheck.register('slider changes the slope', () => {
+  const before = gap.value;
+  gap.value = '2';   update();
+  const wide = parseFloat(readout.textContent.split('slope = ')[1]);
+  gap.value = '0.05'; update();
+  const tight = parseFloat(readout.textContent.split('slope = ')[1]);
+  gap.value = before; update();
+  const ok = Math.abs(wide - 4) < 0.01 && Math.abs(tight - 2.05) < 0.01;
+  return ok || { ok: false, detail: `expected slopes 4 and 2.05, got ${wide} and ${tight}` };
+});
+
+SelfCheck.register('comprehension checks grade correctly', () => {
+  for (const q of Object.keys(ANSWERS)) {
+    const opts = [...document.querySelectorAll('input[name="' + q + '"]')];
+    if (opts.length < 2) return { ok: false, detail: q + ' has fewer than two options' };
+    for (const opt of opts) {
+      opt.checked = true;
+      const got = grade(q);
+      const want = opt.value === ANSWERS[q].correct;
+      if (got !== want) return { ok: false, detail: `${q} option ${opt.value} graded ${got}, expected ${want}` };
+      if (!document.getElementById('fb-' + q).textContent.trim())
+        return { ok: false, detail: q + ' produced no feedback text' };
+    }
+    opts.forEach((o) => { o.checked = false; });
+    const fb = document.getElementById('fb-' + q);
+    fb.textContent = ''; fb.className = 'feedback';
+  }
+  return true;
+});
+</script>
+</body>
+</html>

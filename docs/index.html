@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rize interactive pages status</title>
+<style>
+  :root{color-scheme:light dark;
+    --bg:#faf9f7; --card:#fff; --ink:#1b1a18; --muted:#6b6862; --line:#e5e1da;
+    --ok:#3f8f5f; --warn:#b07d1a; --bad:#c0392b; --accent:#2c3e6b;}
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#16161a; --card:#1f1f25; --ink:#eceaf0; --muted:#a09daa; --line:#32323c;
+    --ok:#6fc48c; --warn:#e0ad4a; --bad:#ef7566; --accent:#9db2e8;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;}
+  .wrap{max-width:60rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+  h1{font-size:1.65rem;margin:0 0 .3rem;letter-spacing:-.01em}
+  .stamp{color:var(--muted);font-size:.9rem;margin:0 0 1.75rem}
+  .summary{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:1.1rem 1.25rem;margin-bottom:1.5rem}
+  .summary h2{margin:0 0 .5rem;font-size:1.1rem}
+  .counts{display:flex;flex-wrap:wrap;gap:1.25rem;margin:.6rem 0 0;padding:0;list-style:none;font-size:.92rem}
+  .counts b{font-variant-numeric:tabular-nums}
+  .what{margin:1rem 0 0;padding-top:.9rem;border-top:1px solid var(--line);
+    font-size:.92rem;color:var(--muted)}
+  .what a{color:var(--accent)}
+  h3{font-size:1rem;margin:2rem 0 .6rem;letter-spacing:.02em;text-transform:uppercase;color:var(--muted)}
+  ul.pages{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+  .page{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem}
+  .page-head{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+  .page-head a{color:var(--ink);font-weight:600;text-decoration:none;word-break:break-word}
+  .page-head a:hover{text-decoration:underline}
+  .dot{width:.65rem;height:.65rem;border-radius:50%;flex:none}
+  .ok .dot{background:var(--ok)} .warn .dot{background:var(--warn)} .fail .dot{background:var(--bad)}
+  .badge{margin-left:auto;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+  .ok .badge{color:var(--ok)} .warn .badge{color:var(--warn)} .fail .badge{color:var(--bad)}
+  .detail{margin:.55rem 0 0;padding-left:1.15rem;font-size:.87rem;line-height:1.45}
+  .detail.bad{color:var(--bad)} .detail.meh{color:var(--muted)}
+  footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.85rem}
+</style></head><body><div class="wrap">
+
+<h1>Rize interactive pages</h1>
+<p class="stamp">Last checked September 18, 2026 at 9:18 PM Eastern. Checked automatically every week and before each term.</p>
+
+<div class="summary">
+  <h2>3 pages need attention</h2>
+  <ul class="counts">
+    <li><b>42</b> working</li>
+    <li><b>7</b> with notes</li>
+    <li><b>3</b> broken</li>
+    <li><b>52</b> pages total</li>
+  </ul>
+  <p class="what"><strong>Instructors:</strong> you do not need to check anything on this page yourself.
+  If a page below is marked <strong>Broken</strong>, or if a page looks wrong to you while teaching,
+  file a helpdesk ticket and say which page.
+  Everything not marked Broken was confirmed working on the date above.</p>
+</div>
+
+<h3>ASM I</h3>
+<ul class="pages">
+      <li class="page fail">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-practice-exams/exam-b.html">Practice Exam B (loans and bonds emphasis)</a>
+          <span class="badge">Broken</span>
+        </div>
+        <ul class="detail bad"><li>JavaScript error on load: TypeError: q.choices.forEach is not a function</li></ul>
+        <ul class="detail meh"><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</li></ul>
+      </li>
+      <li class="page warn">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-practice-exams/exam-a.html">Practice Exam A (balanced topic mix)</a>
+          <span class="badge">Note</span>
+        </div>
+        
+        <ul class="detail meh"><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</li></ul>
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=3">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=4">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=10">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=2">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=5">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=8">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=12">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=9">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=11">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=6">Exam FM Formula Trainer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>ECONM I</h3>
+<ul class="pages">
+      <li class="page fail">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/macro-practice-exams/midterm/">Practice Midterm — ECONM-I</a>
+          <span class="badge">Broken</span>
+        </div>
+        <ul class="detail bad"><li>JavaScript error on load: TypeError: Cannot set properties of undefined (setting 'item-1')</li></ul>
+        
+      </li>
+      <li class="page fail">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/macro-practice-exams/final/">Practice Final — ECONM-I</a>
+          <span class="badge">Broken</span>
+        </div>
+        <ul class="detail bad"><li>JavaScript error on load: TypeError: Cannot set properties of undefined (setting 'item-5')</li></ul>
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/macro-batting-cage/">Macroeconomics Batting Cage — Batting Cage</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/macro-interactives/u1.html">Growth Tools — ECONM-I Unit 1</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/macro-interactives/u2.html">The Market Lab — ECONM-I Unit 2</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/macro-interactives/u3.html">The PPF Lab — ECONM-I Unit 3</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>ECONM II</h3>
+<ul class="pages">
+      <li class="page warn">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/micro-practice-exams/final.html">ECONM-II Practice Final</a>
+          <span class="badge">Note</span>
+        </div>
+        
+        <ul class="detail meh"><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</li><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js</li></ul>
+      </li>
+      <li class="page warn">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/micro-practice-exams/midterm.html">ECONM-II Practice Midterm</a>
+          <span class="badge">Note</span>
+        </div>
+        
+        <ul class="detail meh"><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</li><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js</li></ul>
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/micro-batting-cage/">Microeconomics Batting Cage — Batting Cage</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>FINAN I</h3>
+<ul class="pages">
+      <li class="page warn">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-finding-statements/">Finding Financial Statements Online - FINAN I Unit 3</a>
+          <span class="badge">Note</span>
+        </div>
+        
+        <ul class="detail meh"><li>Console error: Failed to load resource: the server responded with a status of 404 ()</li></ul>
+      </li>
+      <li class="page warn">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-business-evaluation/">How to Evaluate a Business - FINAN I Unit 2</a>
+          <span class="badge">Note</span>
+        </div>
+        
+        <ul class="detail meh"><li>Console error: Failed to load resource: the server responded with a status of 404 ()</li></ul>
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-cashflow-glossary/">Cash Flow Statement Glossary - FINAN I Unit 6</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-financial-markets-preview/">What's Next: Financial Markets and Institutions - FINAN I Unit 14</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-projections-guide/">Financial Projections Guide - FINAN I Unit 8</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-trend-toolkit/">Trend Analysis Toolkit - FINAN I Unit 7</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-bh-data-guide/">Berkshire Hathaway Financial Data Guide - FINAN I Unit 7</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-balance-glossary/">Balance Sheet Glossary - FINAN I Unit 5</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-investment-memos/">Writing Investment Memos - FINAN I Unit 10</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-excel-projections/">Excel Techniques: Projections and Scenario Modeling - FINAN I Unit 8</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-financial-statements-ref/">Financial Statements Quick Reference - FINAN I Unit 3</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-excel-basics/">Excel Basics: Tutorials &amp; Getting Help - FINAN I Unit 2</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/finan-i-income-glossary/">Income Statement Glossary - FINAN I Unit 4</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>MATHS II</h3>
+<ul class="pages">
+      <li class="page warn">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/calc2-practice-exams/final.html">Calculus II Practice Final</a>
+          <span class="badge">Note</span>
+        </div>
+        
+        <ul class="detail meh"><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</li><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js</li></ul>
+      </li>
+      <li class="page warn">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/calc2-practice-exams/midterm.html">Calculus II Practice Midterm</a>
+          <span class="badge">Note</span>
+        </div>
+        
+        <ul class="detail meh"><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</li><li>Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js</li></ul>
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/calc-batting-cage/">The Batting Cage — Calc II</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>ACCNT XI</h3>
+<ul class="pages">
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/accounting-career-cyoa/">Your Accounting Career Path</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>FINAN VIII</h3>
+<ul class="pages">
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/digital-asset-profiles/">Digital Asset Profiles | FINAN-VIII Unit 5</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/token-design-concepts/">Token Design Concepts | FINAN VIII</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/cbdc-primer/">Central Bank Digital Currencies Primer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/lemonade-ai-case/">Case Study: AI at Lemonade Insurance</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/blockchain-crypto-primer/">Blockchain, Crypto, and Digital Assets — FINAN VIII Unit 5</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/erc20-deployment-walkthrough-v2/">ERC-20 Token Deployment Walkthrough — FINAN VIII</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/reserve-currency-wargame/">Reserve Currency Wargame · FINAN VIII</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/de-dollarization-primer/">De-dollarization Primer · FINAN VIII</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/gamestop-explorer/">The GameStop Squeeze: A Data Explorer</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/algorithmic-lending/">Algorithmic Lending and Credit Access</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li>
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/fintech-profiles/">Fintech Company Profiles</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>MATHS V</h3>
+<ul class="pages">
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/calc-3-batting-cage/">The Batting Cage — Calc III</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+<h3>MATHS VII</h3>
+<ul class="pages">
+      <li class="page ok">
+        <div class="page-head">
+          <span class="dot" aria-hidden="true"></span>
+          <a href="https://swachtel-dev.github.io/linalg-batting-cage/">Linear Algebra Batting Cage — Batting Cage</a>
+          <span class="badge">Working</span>
+        </div>
+        
+        
+      </li></ul>
+
+<footer>
+  Generated by <code>rize-interactive-health</code>. Each page is opened in a real browser and
+  checked for: the page loading, its content rendering, its scripts and styles loading, its own
+  built-in self-check passing, and its outward links still resolving.
+  Source of truth for what gets checked is <code>manifest.json</code>.
+</footer>
+</div></body></html>

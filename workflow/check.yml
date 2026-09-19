@@ -1,0 +1,75 @@
+# The whole automated check. This file is the entire "system" Greg asked us not
+# to build: no server, no database, no dashboard app. GitHub runs it for free.
+name: Check interactive pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every Monday 07:00 Eastern, year round.
+    - cron: '0 11 * * 1'
+    # Daily through the run-up to each term (December/January for spring,
+    # July/August for fall), so a break is caught weeks before students arrive.
+    - cron: '0 11 * 12,1,7,8 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Check every page
+        id: check
+        run: node scripts/check.mjs --manifest manifest.json --out results.json
+        continue-on-error: true
+
+      - name: Build the status page
+        env:
+          HELPDESK_URL: ${{ vars.HELPDESK_URL }}
+        run: node scripts/render_status.mjs --in results.json --out docs/index.html
+
+      - name: Publish the status page
+        run: |
+          git config user.name  "interactive-health bot"
+          git config user.email "actions@github.com"
+          git add docs/index.html results.json
+          git diff --staged --quiet || git commit -m "status: $(date -u +%Y-%m-%d)"
+          git push
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: results.json
+
+      # Optional. Add a SLACK_WEBHOOK secret to get pinged; without it this is skipped.
+      - name: Tell Slack if something broke
+        if: steps.check.outcome == 'failure' && env.HOOK != ''
+        env:
+          HOOK: ${{ secrets.SLACK_WEBHOOK }}
+        run: |
+          COUNT=$(node -e "console.log(require('./results.json').summary.fail)")
+          curl -sS -X POST -H 'Content-type: application/json' "$HOOK" -d "$(node -e '
+            const r = require("./results.json");
+            const broken = r.results.filter(x => x.status === "FAIL");
+            console.log(JSON.stringify({ text:
+              ":rotating_light: *" + broken.length + " Rize interactive page(s) are broken*\n" +
+              broken.map(b => "• <" + b.url + "|" + b.id + "> (" + (b.courses.join(", ") || "no course") + ") — " + b.fails[0]).join("\n") +
+              "\n<https://swachtel-dev.github.io/rize-interactive-health/|Full status board>" });
+          ')"
+
+      # Fail the run last, so the status page is always published first.
+      - name: Fail the run if any page is broken
+        if: steps.check.outcome == 'failure'
+        run: exit 1

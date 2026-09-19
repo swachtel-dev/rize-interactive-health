@@ -1,0 +1,12 @@
+// Pulls every externally-hosted page URL referenced by live course content.
+// Uses string::startsWith, NOT `match`: GROQ's `match` returns false positives
+// against null hrefs inside markDefs and will silently match every document.
+// Change the prefix to widen (e.g. "https://" for every external link).
+*[defined(richTextContent)]{
+  _type,
+  "c": course->code,
+  "h": richTextContent[].markDefs[].href
+}{
+  "k": _type + "~" + coalesce(c, "?") + "~" +
+       array::join(h[string::startsWith(@, $prefix)], ";")
+}[k match "*github*"]{k}
