@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Checking interactive course pages — a guide for Rize Claudes</title>
+<meta name="description" content="How to set up automated health checks for externally-hosted Rize course pages: what breaks, what to check, and the exact procedure.">
+<style>
+  :root{color-scheme:light dark;
+    --bg:#fbfaf8; --card:#fff; --ink:#1a1a18; --muted:#57544e; --line:#e3dfd7;
+    --accent:#2b4a8b; --accent-ink:#fff; --ok:#1c6b3f; --bad:#a3291c; --code:#f3f1ec;}
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#141419; --card:#1d1d24; --ink:#eceaef; --muted:#aaa7b1; --line:#31313b;
+    --accent:#a2b8ef; --accent-ink:#141419; --ok:#7fd4a0; --bad:#f09184; --code:#232330;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.65 Georgia,"Iowan Old Style",serif}
+  .wrap{max-width:46rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+  h1,h2,h3,.ui,nav,table,code,pre{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  h1{font-size:2rem;line-height:1.18;letter-spacing:-.02em;margin:0 0 .5rem}
+  h2{font-size:1.3rem;margin:3rem 0 .8rem;padding-top:1.1rem;border-top:1px solid var(--line)}
+  h3{font-size:1.02rem;margin:1.8rem 0 .5rem}
+  .lede{color:var(--muted);font-size:1.1rem;margin:0 0 .4rem}
+  .meta{color:var(--muted);font-size:.85rem;margin:0 0 2rem;font-family:-apple-system,sans-serif}
+  a{color:var(--accent)}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .skip-link{position:absolute;left:-9999px;background:var(--accent);color:var(--accent-ink);
+    padding:.7rem 1rem;z-index:5}
+  .skip-link:focus{left:0}
+  .callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:9px;padding:1.05rem 1.2rem;margin:1.6rem 0;font-size:.97rem}
+  .callout.warn{border-left-color:var(--bad)}
+  .callout p{margin:.4rem 0}
+  .callout p:first-child{margin-top:0} .callout p:last-child{margin-bottom:0}
+  code{background:var(--code);padding:.13em .38em;border-radius:4px;font-size:.87em}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:9px;
+    padding:1rem 1.1rem;overflow-x:auto;font-size:.85rem;line-height:1.55}
+  pre code{background:none;padding:0;font-size:1em}
+  table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1.2rem 0}
+  caption{text-align:left;color:var(--muted);font-size:.87rem;padding-bottom:.5rem}
+  th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  td.sev{white-space:nowrap;font-weight:600}
+  .sev-fail{color:var(--bad)} .sev-warn{color:var(--muted)}
+  ol,ul{padding-left:1.35rem} li{margin:.4rem 0}
+  .steps{list-style:none;padding:0;counter-reset:s}
+  .steps>li{counter-increment:s;position:relative;padding-left:2.6rem;margin:1.7rem 0}
+  .steps>li::before{content:counter(s);position:absolute;left:0;top:.05rem;
+    width:1.75rem;height:1.75rem;border-radius:50%;background:var(--accent);color:var(--accent-ink);
+    font:600 .9rem/1.75rem -apple-system,sans-serif;text-align:center}
+  .steps h3{margin-top:0}
+  footer{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.87rem;font-family:-apple-system,sans-serif}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="wrap">
+
+<header>
+  <h1>Checking interactive course pages</h1>
+  <p class="lede">A guide for Rize Claudes. Everything needed to give an instructional
+  designer automated, pre-semester health checks on externally-hosted course pages.</p>
+  <p class="meta">Built 18 September 2026 · Working reference implementation:
+  <a href="https://github.com/swachtel-dev/rize-interactive-health">swachtel-dev/rize-interactive-health</a>
+  · <a href="./">live status board</a></p>
+</header>
+
+<main id="main">
+
+<h2>The problem, stated precisely</h2>
+
+<p>Rize courses link out to externally-hosted HTML: Khan-Academy-style articles with
+embedded comprehension checks, simulations, practice exams, interactive graphs. They are
+pedagogically worth it, and they rot in ways that nobody notices until a student is stuck.</p>
+
+<p>The failure mode that matters is not the 404. It is the page that returns HTTP 200 and
+is quietly empty.</p>
+
+<div class="callout warn">
+  <p><strong>A real example, found by the first run of this checker.</strong> A live ASM I
+  practice exam rendered its title, its instructions, a countdown timer ticking down from
+  2:30:00, an answered counter reading <em>0/30</em>, and a Submit button. It rendered zero
+  of the thirty questions. One JavaScript error on load had dropped every item. A link
+  checker calls that page healthy, because it is: HTTP 200, correct title, plenty of text.</p>
+</div>
+
+<p>So the check has to open the page in a real browser and look at what rendered. That is
+the whole idea. Everything below is mechanics.</p>
+
+<h2>What to check, and how hard to complain</h2>
+
+<p>The severity split matters more than the check list. A board that goes red every week
+gets ignored, and then it is worth nothing. Third-party links rot constantly and are
+usually not the course's fault, so they warn. Only things that break the page for a
+student fail.</p>
+
+<table>
+  <caption>Checks run against every page on every run</caption>
+  <thead><tr><th scope="col">Check</th><th scope="col">Severity</th></tr></thead>
+  <tbody>
+    <tr><td>The page loads: not a 404, not a timeout</td><td class="sev sev-fail">Fail</td></tr>
+    <tr><td>Its scripts and stylesheets load</td><td class="sev sev-fail">Fail</td></tr>
+    <tr><td>It rendered a real amount of visible text, not an empty shell</td><td class="sev sev-fail">Fail</td></tr>
+    <tr><td>No uncaught JavaScript error on load</td><td class="sev sev-fail">Fail</td></tr>
+    <tr><td>The page's own <code>window.__selfCheck()</code> passes</td><td class="sev sev-fail">Fail</td></tr>
+    <tr><td>Images, fonts and other subresources load</td><td class="sev sev-warn">Warn</td></tr>
+    <tr><td>Outbound links to third-party material still resolve</td><td class="sev sev-warn">Warn</td></tr>
+    <tr><td>No dependency on a floating CDN version (<code>mathjax@3</code>, <code>@latest</code>)</td><td class="sev sev-warn">Warn</td></tr>
+  </tbody>
+</table>
+
+<h2>The idea that keeps this from becoming a system</h2>
+
+<p>Greg's condition was explicit: no bespoke solution that the team then has to maintain.
+The move that satisfies it is pushing the domain knowledge into the pages instead of the
+tool.</p>
+
+<p>Each page exposes one function:</p>
+
+<pre><code>window.__selfCheck()  // → { ok: boolean, checks: [{ name, ok, detail? }] }</code></pre>
+
+<p>The page author writes it while building the page, because they are the only one who
+knows what "working" means for it. The checker calls it and fails the run on any
+<code>ok: false</code>. The checker itself never learns anything about calculus, or about
+any particular widget, so it never has to change. A new page inherits the check for free
+by starting from the template.</p>
+
+<h3>What a good self-check looks like</h3>
+
+<pre><code>SelfCheck.register('slider changes the slope', () => {
+  gap.value = '2';    update();
+  const wide  = readSlope();
+  gap.value = '0.05'; update();
+  const tight = readSlope();
+  const ok = Math.abs(wide - 4) &lt; 0.01 &amp;&amp; Math.abs(tight - 2.05) &lt; 0.01;
+  return ok || { ok: false, detail: `expected 4 and 2.05, got ${wide} and ${tight}` };
+});</code></pre>
+
+<p>Check the things that fail silently, roughly one per interactive element: a visual
+mounted, an input changes the output, every comprehension check grades correctly, and
+data-driven content is present. Do not check prose or styling; a human notices those
+immediately. The <code>detail</code> string lands verbatim on the status board that
+instructors and managers read, so make it a diagnosis.</p>
+
+<div class="callout">
+  <p><strong>Be honest about the limit.</strong> A self-check verifies the page does what
+  its own code says. If the answer key itself is wrong, the key and the grading logic agree
+  and every check passes. That line, between mechanical health and pedagogical correctness,
+  is the right one. Never let a green board stand in for a content review.</p>
+</div>
+
+<h2>The procedure</h2>
+
+<ol class="steps">
+  <li>
+    <h3>One checker repo, not one per page</h3>
+    <p>Pages live in many small repos. Put the checker in a single repo that checks all of
+    them. Adding a workflow to each page repo is fifty copies of one file to maintain,
+    which is the thing you were asked not to build.</p>
+<pre><code>gh repo create &lt;org&gt;/rize-interactive-health --public
+# copy in manifest.json, package.json, scripts/, template/, and
+# workflow/check.yml → .github/workflows/check.yml</code></pre>
+    <p>Then in repo settings: Pages source = <code>main</code> branch <code>/docs</code>
+    folder, and Actions → Workflow permissions → Read and write, so the run can commit the
+    status board back. Optionally add a <code>SLACK_WEBHOOK</code> secret and a
+    <code>HELPDESK_URL</code> variable.</p>
+  </li>
+
+  <li>
+    <h3>Build the manifest from Sanity, not from memory</h3>
+    <p>The list of what to check comes from what courses actually link to, so it cannot
+    drift. You run this query through the Sanity MCP; CI never holds Sanity credentials.</p>
+<pre><code>*[defined(richTextContent)]{
+  _type, "c": course-&gt;code,
+  "h": richTextContent[].markDefs[].href
+}{
+  "k": _type + "~" + coalesce(c,"?") + "~" +
+       array::join(h[string::startsWith(@, $prefix)], ";")
+}[k match "*github*"]{k}</code></pre>
+    <div class="callout warn">
+      <p><strong>Use <code>string::startsWith</code>, never <code>match</code>, on these
+      hrefs.</strong> GROQ's <code>match</code> returns true against the null hrefs inside
+      <code>markDefs</code> and will silently select every document in the dataset. It
+      looks like it worked. It did not.</p>
+    </div>
+    <p>Save the rows as <code>COURSE|URL</code> lines and run
+    <code>python3 scripts/build_manifest.py --rows rows.txt</code>. URLs that drop out of
+    Sanity are marked <code>retired</code> rather than deleted, because an unwiring is
+    sometimes a mistake and a silent deletion hides it.</p>
+    <p>Keep the <em>exact</em> URLs courses link to, including deep links and query strings
+    (<code>/macro-interactives/u1.html</code>, <code>/formula-trainer/?unit=3</code>). A
+    deep link can 404 while the repo's home page is perfectly fine.</p>
+  </li>
+
+  <li>
+    <h3>Schedule it around terms, not just weekly</h3>
+    <p>Weekly year-round, plus daily through December, January, July and August, so a break
+    surfaces weeks before students arrive rather than during week one. That daily-in-the-
+    run-up cron is the part that answers "ahead of upcoming semesters"; a plain weekly cron
+    does not.</p>
+  </li>
+
+  <li>
+    <h3>Break something on purpose before you believe it</h3>
+    <p>Point one manifest entry at a URL that does not exist, run the checker, confirm it
+    goes red and names the page, then put it back. A check nobody has seen fail is not yet
+    known to work. Do the same for a self-check: comment out the line that draws the graph
+    and confirm the run fails with a useful message.</p>
+  </li>
+
+  <li>
+    <h3>Hand over three things</h3>
+    <p>The status board URL for the instructor briefing folder, with one line: <em>if a page
+    here is red, or a page looks wrong while you are teaching, file a helpdesk ticket and say
+    which page.</em> The page template, to start every new page from. And one sentence for
+    their manager: it runs weekly and before each term, it costs nothing, and nobody has to
+    remember to run it.</p>
+    <p>Instructors are the backstop for what the robot cannot see. They are not the primary
+    detector, and a status indicator that is green because nobody has looked is worse than
+    no indicator.</p>
+  </li>
+</ol>
+
+<h2>Standing advice when you build these pages</h2>
+
+<ul>
+  <li><strong>Write the self-checks in the same session as the page.</strong> Part of
+  building it, like alt text. Not an optional extra offered afterwards.</li>
+  <li><strong>Vendor every library; no CDN.</strong> A page with no external runtime
+  dependency can only break when somebody edits it, and that is caught on the next push.
+  Pinned is better than floating; vendored is better than pinned.</li>
+  <li><strong>No API keys.</strong> A key that expires on a schedule nobody tracks is the
+  single most reliable way to have a dead page in week three.</li>
+  <li><strong>Put the pages repos in the Rize org, not a personal account.</strong> The
+  eventual handoff to a product-team repo becomes a transfer rather than a rebuild.</li>
+  <li><strong>Do not tighten the warnings into failures.</strong> Tempting, and it is how
+  the board becomes noise.</li>
+</ul>
+
+<h2>Where everything lives</h2>
+
+<table>
+  <caption>Reference implementation, <a href="https://github.com/swachtel-dev/rize-interactive-health">swachtel-dev/rize-interactive-health</a></caption>
+  <thead><tr><th scope="col">Path</th><th scope="col">What it is</th></tr></thead>
+  <tbody>
+    <tr><td><code>manifest.json</code></td><td>What gets checked, and which course each page serves</td></tr>
+    <tr><td><code>scripts/check.mjs</code></td><td>The checker. Playwright, about 240 lines, the whole engine</td></tr>
+    <tr><td><code>scripts/render_status.mjs</code></td><td>Builds the status board from results.json</td></tr>
+    <tr><td><code>scripts/build_manifest.py</code></td><td>Regenerates the manifest from a Sanity inventory</td></tr>
+    <tr><td><code>template/interactive-page-template.html</code></td><td>Start every new page from this. Khan-style article with comprehension checks and self-checks wired in</td></tr>
+    <tr><td><code>SELFCHECK.md</code></td><td>The page-author contract, in full</td></tr>
+    <tr><td><code>FOR-CLAUDES.md</code></td><td>The same procedure as this page, in the repo, with the gotchas</td></tr>
+  </tbody>
+</table>
+
+<p>The local source of truth on Samuel's machine is
+<code>projects/coursedev/interactive-health/</code>.</p>
+
+</main>
+
+<footer>
+  <p>Written for Rize instructional-design Claudes. If you are setting this up for an ID,
+  read <code>FOR-CLAUDES.md</code> in the repo as well; it carries the operational
+  gotchas this page summarizes.</p>
+</footer>
+</div>
+</body>
+</html>

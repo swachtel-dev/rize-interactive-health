@@ -1,0 +1,870 @@
+{
+  "summary": {
+    "generated": "2026-09-19T01:18:48.253Z",
+    "total": 52,
+    "fail": 3,
+    "warn": 7,
+    "ok": 42,
+    "deadLinks": 0
+  },
+  "results": [
+    {
+      "id": "macro-batting-cage",
+      "url": "https://swachtel-dev.github.io/macro-batting-cage/",
+      "courses": [
+        "ECONM I"
+      ],
+      "title": "Macroeconomics Batting Cage — Batting Cage",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:31.553Z",
+      "httpStatus": 200,
+      "visibleText": 1327
+    },
+    {
+      "id": "finan-i-finding-statements",
+      "url": "https://swachtel-dev.github.io/finan-i-finding-statements/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Finding Financial Statements Online - FINAN I Unit 3",
+      "status": "WARN",
+      "fails": [],
+      "warns": [
+        "Console error: Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "httpStatus": 200,
+      "visibleText": 6664
+    },
+    {
+      "id": "calc-3-batting-cage",
+      "url": "https://swachtel-dev.github.io/calc-3-batting-cage/",
+      "courses": [
+        "MATHS V"
+      ],
+      "title": "The Batting Cage — Calc III",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "httpStatus": 200,
+      "visibleText": 2603
+    },
+    {
+      "id": "asm-fm-practice-exams_exam-a.html",
+      "url": "https://swachtel-dev.github.io/asm-fm-practice-exams/exam-a.html",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Practice Exam A (balanced topic mix)",
+      "status": "WARN",
+      "fails": [],
+      "warns": [
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "httpStatus": 200,
+      "visibleText": 14866
+    },
+    {
+      "id": "asm-fm-practice-exams_exam-b.html",
+      "url": "https://swachtel-dev.github.io/asm-fm-practice-exams/exam-b.html",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Practice Exam B (loans and bonds emphasis)",
+      "status": "FAIL",
+      "fails": [
+        "JavaScript error on load: TypeError: q.choices.forEach is not a function"
+      ],
+      "warns": [
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "httpStatus": 200,
+      "visibleText": 470
+    },
+    {
+      "id": "finan-i-business-evaluation",
+      "url": "https://swachtel-dev.github.io/finan-i-business-evaluation/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "How to Evaluate a Business - FINAN I Unit 2",
+      "status": "WARN",
+      "fails": [],
+      "warns": [
+        "Console error: Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "httpStatus": 200,
+      "visibleText": 5716
+    },
+    {
+      "id": "macro-practice-exams_midterm",
+      "url": "https://swachtel-dev.github.io/macro-practice-exams/midterm/",
+      "courses": [
+        "ECONM I"
+      ],
+      "title": "Practice Midterm — ECONM-I",
+      "status": "FAIL",
+      "fails": [
+        "JavaScript error on load: TypeError: Cannot set properties of undefined (setting 'item-1')"
+      ],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:33.387Z",
+      "httpStatus": 200,
+      "visibleText": 14979
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit3",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=3",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:33.391Z",
+      "httpStatus": 200,
+      "visibleText": 1367
+    },
+    {
+      "id": "linalg-batting-cage",
+      "url": "https://swachtel-dev.github.io/linalg-batting-cage/",
+      "courses": [
+        "MATHS VII"
+      ],
+      "title": "Linear Algebra Batting Cage — Batting Cage",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:33.583Z",
+      "httpStatus": 200,
+      "visibleText": 2073
+    },
+    {
+      "id": "macro-interactives_u1.html",
+      "url": "https://swachtel-dev.github.io/macro-interactives/u1.html",
+      "courses": [
+        "ECONM I"
+      ],
+      "title": "Growth Tools — ECONM-I Unit 1",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:33.751Z",
+      "httpStatus": 200,
+      "visibleText": 2464
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit4",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=4",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:33.755Z",
+      "httpStatus": 200,
+      "visibleText": 1397
+    },
+    {
+      "id": "calc-batting-cage",
+      "url": "https://swachtel-dev.github.io/calc-batting-cage/",
+      "courses": [
+        "MATHS II"
+      ],
+      "title": "The Batting Cage — Calc II",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:33.945Z",
+      "httpStatus": 200,
+      "visibleText": 2535
+    },
+    {
+      "id": "digital-asset-profiles",
+      "url": "https://swachtel-dev.github.io/digital-asset-profiles/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Digital Asset Profiles | FINAN-VIII Unit 5",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:35.162Z",
+      "httpStatus": 200,
+      "visibleText": 6946
+    },
+    {
+      "id": "finan-i-cashflow-glossary",
+      "url": "https://swachtel-dev.github.io/finan-i-cashflow-glossary/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Cash Flow Statement Glossary - FINAN I Unit 6",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:35.391Z",
+      "httpStatus": 200,
+      "visibleText": 14897
+    },
+    {
+      "id": "token-design-concepts",
+      "url": "https://swachtel-dev.github.io/token-design-concepts/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Token Design Concepts | FINAN VIII",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:35.500Z",
+      "httpStatus": 200,
+      "visibleText": 18199
+    },
+    {
+      "id": "finan-i-financial-markets-preview",
+      "url": "https://swachtel-dev.github.io/finan-i-financial-markets-preview/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "What's Next: Financial Markets and Institutions - FINAN I Unit 14",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:35.505Z",
+      "httpStatus": 200,
+      "visibleText": 5251
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit10",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=10",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:35.709Z",
+      "httpStatus": 200,
+      "visibleText": 1350
+    },
+    {
+      "id": "macro-interactives_u2.html",
+      "url": "https://swachtel-dev.github.io/macro-interactives/u2.html",
+      "courses": [
+        "ECONM I"
+      ],
+      "title": "The Market Lab — ECONM-I Unit 2",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:35.835Z",
+      "httpStatus": 200,
+      "visibleText": 6493
+    },
+    {
+      "id": "finan-i-projections-guide",
+      "url": "https://swachtel-dev.github.io/finan-i-projections-guide/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Financial Projections Guide - FINAN I Unit 8",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:36.522Z",
+      "httpStatus": 200,
+      "visibleText": 9222
+    },
+    {
+      "id": "cbdc-primer",
+      "url": "https://swachtel-dev.github.io/cbdc-primer/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Central Bank Digital Currencies Primer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:36.844Z",
+      "httpStatus": 200,
+      "visibleText": 14202
+    },
+    {
+      "id": "accounting-career-cyoa",
+      "url": "https://swachtel-dev.github.io/accounting-career-cyoa/",
+      "courses": [
+        "ACCNT XI"
+      ],
+      "title": "Your Accounting Career Path",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:37.029Z",
+      "httpStatus": 200,
+      "visibleText": 1408
+    },
+    {
+      "id": "lemonade-ai-case",
+      "url": "https://swachtel-dev.github.io/lemonade-ai-case/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Case Study: AI at Lemonade Insurance",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:37.031Z",
+      "httpStatus": 200,
+      "visibleText": 19366
+    },
+    {
+      "id": "calc2-practice-exams_final.html",
+      "url": "https://swachtel-dev.github.io/calc2-practice-exams/final.html",
+      "courses": [
+        "MATHS II"
+      ],
+      "title": "Calculus II Practice Final",
+      "status": "WARN",
+      "fails": [],
+      "warns": [
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:37.242Z",
+      "httpStatus": 200,
+      "visibleText": 10800
+    },
+    {
+      "id": "micro-batting-cage",
+      "url": "https://swachtel-dev.github.io/micro-batting-cage/",
+      "courses": [
+        "ECONM II"
+      ],
+      "title": "Microeconomics Batting Cage — Batting Cage",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:37.646Z",
+      "httpStatus": 200,
+      "visibleText": 1445
+    },
+    {
+      "id": "macro-practice-exams_final",
+      "url": "https://swachtel-dev.github.io/macro-practice-exams/final/",
+      "courses": [
+        "ECONM I"
+      ],
+      "title": "Practice Final — ECONM-I",
+      "status": "FAIL",
+      "fails": [
+        "JavaScript error on load: TypeError: Cannot set properties of undefined (setting 'item-5')"
+      ],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:38.435Z",
+      "httpStatus": 200,
+      "visibleText": 16450
+    },
+    {
+      "id": "finan-i-trend-toolkit",
+      "url": "https://swachtel-dev.github.io/finan-i-trend-toolkit/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Trend Analysis Toolkit - FINAN I Unit 7",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:38.524Z",
+      "httpStatus": 200,
+      "visibleText": 5744
+    },
+    {
+      "id": "finan-i-bh-data-guide",
+      "url": "https://swachtel-dev.github.io/finan-i-bh-data-guide/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Berkshire Hathaway Financial Data Guide - FINAN I Unit 7",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:38.645Z",
+      "httpStatus": 200,
+      "visibleText": 3893
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit2",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=2",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:38.834Z",
+      "httpStatus": 200,
+      "visibleText": 1431
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit5",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=5",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:39.124Z",
+      "httpStatus": 200,
+      "visibleText": 1360
+    },
+    {
+      "id": "blockchain-crypto-primer",
+      "url": "https://swachtel-dev.github.io/blockchain-crypto-primer/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Blockchain, Crypto, and Digital Assets — FINAN VIII Unit 5",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:39.368Z",
+      "httpStatus": 200,
+      "visibleText": 12852
+    },
+    {
+      "id": "finan-i-balance-glossary",
+      "url": "https://swachtel-dev.github.io/finan-i-balance-glossary/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Balance Sheet Glossary - FINAN I Unit 5",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:39.897Z",
+      "httpStatus": 200,
+      "visibleText": 7884
+    },
+    {
+      "id": "micro-practice-exams_final.html",
+      "url": "https://swachtel-dev.github.io/micro-practice-exams/final.html",
+      "courses": [
+        "ECONM II"
+      ],
+      "title": "ECONM-II Practice Final",
+      "status": "WARN",
+      "fails": [],
+      "warns": [
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:40.039Z",
+      "httpStatus": 200,
+      "visibleText": 17252
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit8",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=8",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:40.309Z",
+      "httpStatus": 200,
+      "visibleText": 1284
+    },
+    {
+      "id": "asm-fm-formula-trainer",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:40.313Z",
+      "httpStatus": 200,
+      "visibleText": 1431
+    },
+    {
+      "id": "finan-i-investment-memos",
+      "url": "https://swachtel-dev.github.io/finan-i-investment-memos/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Writing Investment Memos - FINAN I Unit 10",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:40.685Z",
+      "httpStatus": 200,
+      "visibleText": 11265
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit12",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=12",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:41.138Z",
+      "httpStatus": 200,
+      "visibleText": 1367
+    },
+    {
+      "id": "calc2-practice-exams_midterm.html",
+      "url": "https://swachtel-dev.github.io/calc2-practice-exams/midterm.html",
+      "courses": [
+        "MATHS II"
+      ],
+      "title": "Calculus II Practice Midterm",
+      "status": "WARN",
+      "fails": [],
+      "warns": [
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:41.305Z",
+      "httpStatus": 200,
+      "visibleText": 7125
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit9",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=9",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:42.193Z",
+      "httpStatus": 200,
+      "visibleText": 1358
+    },
+    {
+      "id": "macro-interactives_u3.html",
+      "url": "https://swachtel-dev.github.io/macro-interactives/u3.html",
+      "courses": [
+        "ECONM I"
+      ],
+      "title": "The PPF Lab — ECONM-I Unit 3",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:42.403Z",
+      "httpStatus": 200,
+      "visibleText": 3260
+    },
+    {
+      "id": "finan-i-excel-projections",
+      "url": "https://swachtel-dev.github.io/finan-i-excel-projections/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Excel Techniques: Projections and Scenario Modeling - FINAN I Unit 8",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:42.413Z",
+      "httpStatus": 200,
+      "visibleText": 6188
+    },
+    {
+      "id": "erc20-deployment-walkthrough-v2",
+      "url": "https://swachtel-dev.github.io/erc20-deployment-walkthrough-v2/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "ERC-20 Token Deployment Walkthrough — FINAN VIII",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:42.789Z",
+      "httpStatus": 200,
+      "visibleText": 14191
+    },
+    {
+      "id": "reserve-currency-wargame",
+      "url": "https://swachtel-dev.github.io/reserve-currency-wargame/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Reserve Currency Wargame · FINAN VIII",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:43.146Z",
+      "httpStatus": 200,
+      "visibleText": 1648
+    },
+    {
+      "id": "de-dollarization-primer",
+      "url": "https://swachtel-dev.github.io/de-dollarization-primer/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "De-dollarization Primer · FINAN VIII",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:43.457Z",
+      "httpStatus": 200,
+      "visibleText": 11768
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit11",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=11",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:44.043Z",
+      "httpStatus": 200,
+      "visibleText": 1331
+    },
+    {
+      "id": "finan-i-financial-statements-ref",
+      "url": "https://swachtel-dev.github.io/finan-i-financial-statements-ref/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Financial Statements Quick Reference - FINAN I Unit 3",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:44.142Z",
+      "httpStatus": 200,
+      "visibleText": 2278
+    },
+    {
+      "id": "micro-practice-exams_midterm.html",
+      "url": "https://swachtel-dev.github.io/micro-practice-exams/midterm.html",
+      "courses": [
+        "ECONM II"
+      ],
+      "title": "ECONM-II Practice Midterm",
+      "status": "WARN",
+      "fails": [],
+      "warns": [
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+        "Depends on an unpinned CDN version, which can change without notice: https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+      ],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:44.638Z",
+      "httpStatus": 200,
+      "visibleText": 12063
+    },
+    {
+      "id": "gamestop-explorer",
+      "url": "https://swachtel-dev.github.io/gamestop-explorer/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "The GameStop Squeeze: A Data Explorer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:45.248Z",
+      "httpStatus": 200,
+      "visibleText": 3515
+    },
+    {
+      "id": "finan-i-excel-basics",
+      "url": "https://swachtel-dev.github.io/finan-i-excel-basics/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Excel Basics: Tutorials & Getting Help - FINAN I Unit 2",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:45.514Z",
+      "httpStatus": 200,
+      "visibleText": 5795
+    },
+    {
+      "id": "algorithmic-lending",
+      "url": "https://swachtel-dev.github.io/algorithmic-lending/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Algorithmic Lending and Credit Access",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:45.623Z",
+      "httpStatus": 200,
+      "visibleText": 4390
+    },
+    {
+      "id": "asm-fm-formula-trainer_-unit6",
+      "url": "https://swachtel-dev.github.io/asm-fm-formula-trainer/?unit=6",
+      "courses": [
+        "ASM I"
+      ],
+      "title": "Exam FM Formula Trainer",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:45.701Z",
+      "httpStatus": 200,
+      "visibleText": 1356
+    },
+    {
+      "id": "fintech-profiles",
+      "url": "https://swachtel-dev.github.io/fintech-profiles/",
+      "courses": [
+        "FINAN VIII"
+      ],
+      "title": "Fintech Company Profiles",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:45.859Z",
+      "httpStatus": 200,
+      "visibleText": 2643
+    },
+    {
+      "id": "finan-i-income-glossary",
+      "url": "https://swachtel-dev.github.io/finan-i-income-glossary/",
+      "courses": [
+        "FINAN I"
+      ],
+      "title": "Income Statement Glossary - FINAN I Unit 4",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": null,
+      "links": [],
+      "checkedAt": "2026-09-19T01:18:46.755Z",
+      "httpStatus": 200,
+      "visibleText": 8164
+    }
+  ]
+}
