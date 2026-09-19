@@ -1,30 +1,13 @@
 {
   "summary": {
-    "generated": "2026-09-19T19:53:01.704Z",
-    "total": 53,
-    "fail": 1,
+    "generated": "2026-09-19T19:54:24.622Z",
+    "total": 52,
+    "fail": 0,
     "warn": 7,
     "ok": 45,
     "deadLinks": 3
   },
   "results": [
-    {
-      "id": "CANARY-deliberate-break",
-      "url": "https://swachtel-dev.github.io/rize-interactive-health/this-page-does-not-exist.html",
-      "courses": [
-        "CANARY — deliberate test, remove after"
-      ],
-      "title": "CANARY-deliberate-break",
-      "status": "FAIL",
-      "fails": [
-        "Page did not load (HTTP 404)."
-      ],
-      "warns": [],
-      "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T19:52:39.174Z",
-      "httpStatus": 404
-    },
     {
       "id": "macro-batting-cage",
       "url": "https://swachtel-dev.github.io/macro-batting-cage/",
@@ -37,7 +20,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:39.174Z",
+      "checkedAt": "2026-09-19T19:54:02.215Z",
       "httpStatus": 200,
       "visibleText": 1327
     },
@@ -58,7 +41,7 @@
         "https://www.investopedia.com/terms/1/10-k.asp",
         "https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-stateme"
       ],
-      "checkedAt": "2026-09-19T19:52:39.174Z",
+      "checkedAt": "2026-09-19T19:54:02.216Z",
       "httpStatus": 200,
       "visibleText": 6664
     },
@@ -74,7 +57,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:39.174Z",
+      "checkedAt": "2026-09-19T19:54:02.216Z",
       "httpStatus": 200,
       "visibleText": 2603
     },
@@ -92,7 +75,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:39.174Z",
+      "checkedAt": "2026-09-19T19:54:02.216Z",
       "httpStatus": 200,
       "visibleText": 14866
     },
@@ -110,7 +93,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:39.174Z",
+      "checkedAt": "2026-09-19T19:54:02.216Z",
       "httpStatus": 200,
       "visibleText": 13697
     },
@@ -126,7 +109,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:39.490Z",
+      "checkedAt": "2026-09-19T19:54:02.216Z",
       "httpStatus": 200,
       "visibleText": 5716
     },
@@ -154,7 +137,7 @@
         "https://www.youtube.com/watch?v=9jLlOPqHxLs",
         "https://www.youtube.com/watch?v=GMNcJ0pXAY8"
       ],
-      "checkedAt": "2026-09-19T19:52:40.581Z",
+      "checkedAt": "2026-09-19T19:54:03.575Z",
       "httpStatus": 200,
       "visibleText": 14979
     },
@@ -170,7 +153,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:40.726Z",
+      "checkedAt": "2026-09-19T19:54:03.595Z",
       "httpStatus": 200,
       "visibleText": 1367
     },
@@ -186,7 +169,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:40.756Z",
+      "checkedAt": "2026-09-19T19:54:03.718Z",
       "httpStatus": 200,
       "visibleText": 2073
     },
@@ -202,7 +185,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:40.837Z",
+      "checkedAt": "2026-09-19T19:54:03.761Z",
       "httpStatus": 200,
       "visibleText": 2464
     },
@@ -218,7 +201,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:40.870Z",
+      "checkedAt": "2026-09-19T19:54:03.916Z",
       "httpStatus": 200,
       "visibleText": 1397
     },
@@ -234,7 +217,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:40.968Z",
+      "checkedAt": "2026-09-19T19:54:03.979Z",
       "httpStatus": 200,
       "visibleText": 2535
     },
@@ -275,7 +258,7 @@
         "https://makerdao.com/en/whitepaper/",
         "https://daistats.com/"
       ],
-      "checkedAt": "2026-09-19T19:52:42.297Z",
+      "checkedAt": "2026-09-19T19:54:05.043Z",
       "httpStatus": 200,
       "visibleText": 6946
     },
@@ -295,7 +278,7 @@
         "https://corporatefinanceinstitute.com/resources/accounting/statement-of-cash-flows/",
         "https://www.investopedia.com/investing/what-is-a-cash-flow-statement/"
       ],
-      "checkedAt": "2026-09-19T19:52:42.396Z",
+      "checkedAt": "2026-09-19T19:54:05.278Z",
       "httpStatus": 200,
       "visibleText": 14897
     },
@@ -311,7 +294,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:42.500Z",
+      "checkedAt": "2026-09-19T19:54:05.365Z",
       "httpStatus": 200,
       "visibleText": 18199
     },
@@ -327,7 +310,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:42.540Z",
+      "checkedAt": "2026-09-19T19:54:05.425Z",
       "httpStatus": 200,
       "visibleText": 5251
     },
@@ -343,7 +326,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:42.571Z",
+      "checkedAt": "2026-09-19T19:54:05.534Z",
       "httpStatus": 200,
       "visibleText": 1350
     },
@@ -359,7 +342,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:42.611Z",
+      "checkedAt": "2026-09-19T19:54:05.577Z",
       "httpStatus": 200,
       "visibleText": 6493
     },
@@ -375,7 +358,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:43.524Z",
+      "checkedAt": "2026-09-19T19:54:06.268Z",
       "httpStatus": 200,
       "visibleText": 9222
     },
@@ -403,7 +386,7 @@
         "https://www.piie.com/blogs/realtime-economics/2026/china-gives-state-backed-digital-cash-us-and-europe-should-take-note",
         "https://www.bis.org/publ/bppdf/bispap159.htm"
       ],
-      "checkedAt": "2026-09-19T19:52:43.605Z",
+      "checkedAt": "2026-09-19T19:54:06.518Z",
       "httpStatus": 200,
       "visibleText": 14202
     },
@@ -419,7 +402,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:43.768Z",
+      "checkedAt": "2026-09-19T19:54:06.610Z",
       "httpStatus": 200,
       "visibleText": 1408
     },
@@ -439,7 +422,7 @@
         "https://actuary.org/article/unmasking-hidden-bias/",
         "https://fortune.com/2021/05/26/lemonade-insurance-ai-face-scanning-fraud/"
       ],
-      "checkedAt": "2026-09-19T19:52:43.793Z",
+      "checkedAt": "2026-09-19T19:54:06.704Z",
       "httpStatus": 200,
       "visibleText": 19366
     },
@@ -458,7 +441,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:43.956Z",
+      "checkedAt": "2026-09-19T19:54:06.860Z",
       "httpStatus": 200,
       "visibleText": 10800
     },
@@ -474,7 +457,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:44.047Z",
+      "checkedAt": "2026-09-19T19:54:07.150Z",
       "httpStatus": 200,
       "visibleText": 1445
     },
@@ -505,7 +488,7 @@
         "https://www.youtube.com/watch?v=uPRQnQxsL3E",
         "https://www.youtube.com/watch?v=5X5v7vRYQjc"
       ],
-      "checkedAt": "2026-09-19T19:52:44.840Z",
+      "checkedAt": "2026-09-19T19:54:07.736Z",
       "httpStatus": 200,
       "visibleText": 16450
     },
@@ -525,7 +508,7 @@
         "https://www.investopedia.com/terms/y/year-over-year.asp",
         "https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
       ],
-      "checkedAt": "2026-09-19T19:52:45.027Z",
+      "checkedAt": "2026-09-19T19:54:07.937Z",
       "httpStatus": 200,
       "visibleText": 5744
     },
@@ -545,7 +528,7 @@
         "https://www.berkshirehathaway.com/reports.html",
         "https://www.sec.gov/cgi-bin/browse-edgar?company=berkshire+hathaway&CIK=&type=10-K&dateb=&owner=include&count=40&search_text=&action=getcompany"
       ],
-      "checkedAt": "2026-09-19T19:52:45.085Z",
+      "checkedAt": "2026-09-19T19:54:08.033Z",
       "httpStatus": 200,
       "visibleText": 3893
     },
@@ -561,7 +544,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:45.235Z",
+      "checkedAt": "2026-09-19T19:54:08.099Z",
       "httpStatus": 200,
       "visibleText": 1431
     },
@@ -577,7 +560,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:45.410Z",
+      "checkedAt": "2026-09-19T19:54:08.637Z",
       "httpStatus": 200,
       "visibleText": 1360
     },
@@ -607,7 +590,7 @@
         "https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/",
         "https://ethereum.org/developers/docs/standards/tokens/erc-20/"
       ],
-      "checkedAt": "2026-09-19T19:52:45.991Z",
+      "checkedAt": "2026-09-19T19:54:08.874Z",
       "httpStatus": 200,
       "visibleText": 12852
     },
@@ -627,7 +610,7 @@
         "https://www.investopedia.com/terms/b/balancesheet.asp",
         "https://corporatefinanceinstitute.com/resources/accounting/balance-sheet/"
       ],
-      "checkedAt": "2026-09-19T19:52:46.276Z",
+      "checkedAt": "2026-09-19T19:54:09.181Z",
       "httpStatus": 200,
       "visibleText": 7884
     },
@@ -646,7 +629,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:46.310Z",
+      "checkedAt": "2026-09-19T19:54:09.294Z",
       "httpStatus": 200,
       "visibleText": 17252
     },
@@ -662,7 +645,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:46.332Z",
+      "checkedAt": "2026-09-19T19:54:09.392Z",
       "httpStatus": 200,
       "visibleText": 1284
     },
@@ -678,7 +661,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:46.517Z",
+      "checkedAt": "2026-09-19T19:54:09.434Z",
       "httpStatus": 200,
       "visibleText": 1431
     },
@@ -696,7 +679,7 @@
       "links": [
         "https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
       ],
-      "checkedAt": "2026-09-19T19:52:46.674Z",
+      "checkedAt": "2026-09-19T19:54:09.932Z",
       "httpStatus": 200,
       "visibleText": 11265
     },
@@ -712,7 +695,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:47.306Z",
+      "checkedAt": "2026-09-19T19:54:10.364Z",
       "httpStatus": 200,
       "visibleText": 1367
     },
@@ -731,7 +714,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:47.483Z",
+      "checkedAt": "2026-09-19T19:54:10.427Z",
       "httpStatus": 200,
       "visibleText": 7125
     },
@@ -747,7 +730,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:47.693Z",
+      "checkedAt": "2026-09-19T19:54:10.758Z",
       "httpStatus": 200,
       "visibleText": 1358
     },
@@ -763,7 +746,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:47.941Z",
+      "checkedAt": "2026-09-19T19:54:10.818Z",
       "httpStatus": 200,
       "visibleText": 3260
     },
@@ -779,7 +762,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:47.942Z",
+      "checkedAt": "2026-09-19T19:54:11.017Z",
       "httpStatus": 200,
       "visibleText": 6188
     },
@@ -806,7 +789,7 @@
         "https://etherscan.io/",
         "https://etherscan.io/gastracker"
       ],
-      "checkedAt": "2026-09-19T19:52:48.120Z",
+      "checkedAt": "2026-09-19T19:54:11.183Z",
       "httpStatus": 200,
       "visibleText": 14191
     },
@@ -822,7 +805,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:48.545Z",
+      "checkedAt": "2026-09-19T19:54:11.703Z",
       "httpStatus": 200,
       "visibleText": 1648
     },
@@ -847,7 +830,7 @@
         "https://www.bis.org/about/bisih/topics/cbdc/mcbdc_bridge.htm",
         "https://www.atlanticcouncil.org/programs/geoeconomics-center/dollar-dominance-monitor/"
       ],
-      "checkedAt": "2026-09-19T19:52:48.978Z",
+      "checkedAt": "2026-09-19T19:54:12.138Z",
       "httpStatus": 200,
       "visibleText": 11768
     },
@@ -863,7 +846,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:49.170Z",
+      "checkedAt": "2026-09-19T19:54:12.318Z",
       "httpStatus": 200,
       "visibleText": 1331
     },
@@ -879,7 +862,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:49.353Z",
+      "checkedAt": "2026-09-19T19:54:12.410Z",
       "httpStatus": 200,
       "visibleText": 2278
     },
@@ -898,7 +881,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:49.459Z",
+      "checkedAt": "2026-09-19T19:54:12.438Z",
       "httpStatus": 200,
       "visibleText": 12063
     },
@@ -918,7 +901,7 @@
         "https://www.congress.gov/event/117th-congress/house-event/LC66883/text",
         "https://www.npr.org/2021/02/18/968829355/gamestop-hearing-today-roaring-kitty-along-with-ceos-to-appear-before-congress"
       ],
-      "checkedAt": "2026-09-19T19:52:49.701Z",
+      "checkedAt": "2026-09-19T19:54:12.911Z",
       "httpStatus": 200,
       "visibleText": 3515
     },
@@ -942,7 +925,7 @@
         "https://www.youtube.com/watch?v=-4yCXpv-drg",
         "https://www.youtube.com/watch?v=iotrTlRT3q0"
       ],
-      "checkedAt": "2026-09-19T19:52:49.817Z",
+      "checkedAt": "2026-09-19T19:54:13.192Z",
       "httpStatus": 200,
       "visibleText": 5795
     },
@@ -964,7 +947,7 @@
         "https://www.brookings.edu/articles/an-ai-fair-lending-policy-agenda-for-the-federal-financial-regulators/",
         "https://www.federalreserve.gov/econres/feds/files/2017056pap.pdf"
       ],
-      "checkedAt": "2026-09-19T19:52:50.270Z",
+      "checkedAt": "2026-09-19T19:54:13.623Z",
       "httpStatus": 200,
       "visibleText": 4390
     },
@@ -980,7 +963,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T19:52:50.414Z",
+      "checkedAt": "2026-09-19T19:54:13.691Z",
       "httpStatus": 200,
       "visibleText": 1356
     },
@@ -1032,7 +1015,7 @@
         "https://investors.toasttab.com/",
         "https://pos.toasttab.com/about"
       ],
-      "checkedAt": "2026-09-19T19:52:50.585Z",
+      "checkedAt": "2026-09-19T19:54:13.693Z",
       "httpStatus": 200,
       "visibleText": 2643
     },
@@ -1053,7 +1036,7 @@
         "https://www.britannica.com/money/profit-margin-types",
         "https://corporatefinanceinstitute.com/resources/accounting/profit-margin/"
       ],
-      "checkedAt": "2026-09-19T19:52:51.016Z",
+      "checkedAt": "2026-09-19T19:54:14.209Z",
       "httpStatus": 200,
       "visibleText": 8164
     }
