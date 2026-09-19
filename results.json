@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated": "2026-09-19T01:18:48.253Z",
+    "generated": "2026-09-19T19:44:55.516Z",
     "total": 52,
     "fail": 3,
-    "warn": 7,
-    "ok": 42,
-    "deadLinks": 0
+    "warn": 6,
+    "ok": 43,
+    "deadLinks": 3
   },
   "results": [
     {
@@ -20,7 +20,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:31.553Z",
+      "checkedAt": "2026-09-19T19:44:33.196Z",
       "httpStatus": 200,
       "visibleText": 1327
     },
@@ -31,14 +31,17 @@
         "FINAN I"
       ],
       "title": "Finding Financial Statements Online - FINAN I Unit 3",
-      "status": "WARN",
+      "status": "OK",
       "fails": [],
-      "warns": [
-        "Console error: Failed to load resource: the server responded with a status of 404 ()"
-      ],
+      "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "links": [
+        "https://www.sec.gov/search-filings",
+        "https://www.sec.gov/oiea/reports-and-publications/investor-publications/beginners-guide-financial-statements",
+        "https://www.investopedia.com/terms/1/10-k.asp",
+        "https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-stateme"
+      ],
+      "checkedAt": "2026-09-19T19:44:33.196Z",
       "httpStatus": 200,
       "visibleText": 6664
     },
@@ -54,7 +57,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "checkedAt": "2026-09-19T19:44:33.196Z",
       "httpStatus": 200,
       "visibleText": 2603
     },
@@ -72,7 +75,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "checkedAt": "2026-09-19T19:44:33.196Z",
       "httpStatus": 200,
       "visibleText": 14866
     },
@@ -92,7 +95,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "checkedAt": "2026-09-19T19:44:33.196Z",
       "httpStatus": 200,
       "visibleText": 470
     },
@@ -103,14 +106,12 @@
         "FINAN I"
       ],
       "title": "How to Evaluate a Business - FINAN I Unit 2",
-      "status": "WARN",
+      "status": "OK",
       "fails": [],
-      "warns": [
-        "Console error: Failed to load resource: the server responded with a status of 404 ()"
-      ],
+      "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:31.554Z",
+      "checkedAt": "2026-09-19T19:44:33.196Z",
       "httpStatus": 200,
       "visibleText": 5716
     },
@@ -127,8 +128,20 @@
       ],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:33.387Z",
+      "links": [
+        "https://www.youtube.com/watch?v=gudArsau8pU",
+        "https://www.youtube.com/watch?v=kUPm2tMCbGE",
+        "https://www.youtube.com/watch?v=uorrlWJ23Mg",
+        "https://www.youtube.com/watch?v=7eZcPs9z9OA",
+        "https://www.youtube.com/watch?v=B9MPklfyRHI",
+        "https://www.youtube.com/watch?v=oL20S7c0ZJE",
+        "https://www.youtube.com/watch?v=hMkvmZK3AJ4",
+        "https://www.youtube.com/watch?v=Q3PZ4HTOJqQ",
+        "https://www.youtube.com/watch?v=GeoQuhEs6kg",
+        "https://www.youtube.com/watch?v=9jLlOPqHxLs",
+        "https://www.youtube.com/watch?v=GMNcJ0pXAY8"
+      ],
+      "checkedAt": "2026-09-19T19:44:34.633Z",
       "httpStatus": 200,
       "visibleText": 14979
     },
@@ -144,7 +157,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:33.391Z",
+      "checkedAt": "2026-09-19T19:44:34.716Z",
       "httpStatus": 200,
       "visibleText": 1367
     },
@@ -160,7 +173,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:33.583Z",
+      "checkedAt": "2026-09-19T19:44:34.772Z",
       "httpStatus": 200,
       "visibleText": 2073
     },
@@ -176,7 +189,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:33.751Z",
+      "checkedAt": "2026-09-19T19:44:34.785Z",
       "httpStatus": 200,
       "visibleText": 2464
     },
@@ -192,7 +205,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:33.755Z",
+      "checkedAt": "2026-09-19T19:44:34.924Z",
       "httpStatus": 200,
       "visibleText": 1397
     },
@@ -208,7 +221,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:33.945Z",
+      "checkedAt": "2026-09-19T19:44:34.979Z",
       "httpStatus": 200,
       "visibleText": 2535
     },
@@ -223,8 +236,33 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:35.162Z",
+      "links": [
+        "https://ethereum.org/en/developers/docs/",
+        "https://ethereum.org/en/whitepaper/",
+        "https://ultrasound.money/",
+        "https://www.circle.com/en/usdc",
+        "https://www.circle.com/en/transparency",
+        "https://www.federalreserve.gov/econres/notes/feds-notes/the-stable-in-stablecoins-20221216.html",
+        "https://docs.aave.com/",
+        "https://governance.aave.com/",
+        "https://research.stlouisfed.org/publications/review/2021/02/05/decentralized-finance-on-blockchain-and-smart-contract-based-financial-markets",
+        "https://docs.uniswap.org/",
+        "https://uniswap.org/whitepaper-v3.pdf",
+        "https://www.paradigm.xyz/2021/06/uniswap-v3-the-universal-amm",
+        "https://docs.chain.link/",
+        "https://chain.link/whitepaper",
+        "https://blog.chain.link/what-is-a-blockchain-oracle/",
+        "https://docs.lido.fi/",
+        "https://lido.fi/static/Lido:Ethereum-Liquid-Staking.pdf",
+        "https://dune.com/lido/lido-morning-coffee-dashboard",
+        "https://developers.stellar.org/docs",
+        "https://www.stellar.org/papers/stellar-consensus-protocol",
+        "https://www.stellar.org/case-studies",
+        "https://docs.makerdao.com/",
+        "https://makerdao.com/en/whitepaper/",
+        "https://daistats.com/"
+      ],
+      "checkedAt": "2026-09-19T19:44:36.260Z",
       "httpStatus": 200,
       "visibleText": 6946
     },
@@ -239,8 +277,12 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:35.391Z",
+      "links": [
+        "https://www.sec.gov/oiea/reports-and-publications/investor-publications/beginners-guide-financial-statements",
+        "https://corporatefinanceinstitute.com/resources/accounting/statement-of-cash-flows/",
+        "https://www.investopedia.com/investing/what-is-a-cash-flow-statement/"
+      ],
+      "checkedAt": "2026-09-19T19:44:36.462Z",
       "httpStatus": 200,
       "visibleText": 14897
     },
@@ -256,7 +298,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:35.500Z",
+      "checkedAt": "2026-09-19T19:44:36.465Z",
       "httpStatus": 200,
       "visibleText": 18199
     },
@@ -272,7 +314,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:35.505Z",
+      "checkedAt": "2026-09-19T19:44:36.503Z",
       "httpStatus": 200,
       "visibleText": 5251
     },
@@ -288,7 +330,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:35.709Z",
+      "checkedAt": "2026-09-19T19:44:36.603Z",
       "httpStatus": 200,
       "visibleText": 1350
     },
@@ -304,7 +346,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:35.835Z",
+      "checkedAt": "2026-09-19T19:44:36.633Z",
       "httpStatus": 200,
       "visibleText": 6493
     },
@@ -320,7 +362,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:36.522Z",
+      "checkedAt": "2026-09-19T19:44:37.519Z",
       "httpStatus": 200,
       "visibleText": 9222
     },
@@ -335,8 +377,20 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:36.844Z",
+      "links": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S0378426623001668",
+        "https://www.imf.org/en/publications/fandd/issues/2025/09/indias-frictionless-payments-maria-peria",
+        "https://www.fdic.gov/analysis/household-survey",
+        "https://www.atlanticcouncil.org/cbdctracker/",
+        "https://www.whitehouse.gov/presidential-actions/2025/01/strengthening-american-leadership-in-digital-financial-technology/",
+        "https://www.federalreserve.gov/publications/january-2022-cbdc.htm",
+        "https://www.bis.org/publ/othp33.pdf",
+        "https://www.csis.org/analysis/central-bank-digital-currency-design-choices-and-impacts-currency-internationalization",
+        "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
+        "https://www.piie.com/blogs/realtime-economics/2026/china-gives-state-backed-digital-cash-us-and-europe-should-take-note",
+        "https://www.bis.org/publ/bppdf/bispap159.htm"
+      ],
+      "checkedAt": "2026-09-19T19:44:37.808Z",
       "httpStatus": 200,
       "visibleText": 14202
     },
@@ -352,7 +406,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:37.029Z",
+      "checkedAt": "2026-09-19T19:44:37.832Z",
       "httpStatus": 200,
       "visibleText": 1408
     },
@@ -367,8 +421,12 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:37.031Z",
+      "links": [
+        "https://www.brookings.edu/articles/recommendations-for-responsible-use-of-ai-in-financial-services/",
+        "https://actuary.org/article/unmasking-hidden-bias/",
+        "https://fortune.com/2021/05/26/lemonade-insurance-ai-face-scanning-fraud/"
+      ],
+      "checkedAt": "2026-09-19T19:44:37.865Z",
       "httpStatus": 200,
       "visibleText": 19366
     },
@@ -387,7 +445,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:37.242Z",
+      "checkedAt": "2026-09-19T19:44:37.964Z",
       "httpStatus": 200,
       "visibleText": 10800
     },
@@ -403,7 +461,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:37.646Z",
+      "checkedAt": "2026-09-19T19:44:38.328Z",
       "httpStatus": 200,
       "visibleText": 1445
     },
@@ -420,8 +478,23 @@
       ],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:38.435Z",
+      "links": [
+        "https://www.youtube.com/watch?v=hxAMWm9VRgg",
+        "https://www.youtube.com/watch?v=8oQxzHgceBA",
+        "https://www.youtube.com/watch?v=4FNdUTN4cHY",
+        "https://www.youtube.com/watch?v=kUPm2tMCbGE",
+        "https://www.youtube.com/watch?v=gudArsau8pU",
+        "https://www.youtube.com/watch?v=wdKBfXRpNsk",
+        "https://www.youtube.com/watch?v=B9MPklfyRHI",
+        "https://www.youtube.com/watch?v=7eZcPs9z9OA",
+        "https://www.youtube.com/watch?v=uorrlWJ23Mg",
+        "https://www.youtube.com/watch?v=oL20S7c0ZJE",
+        "https://www.youtube.com/watch?v=hMkvmZK3AJ4",
+        "https://www.youtube.com/watch?v=GeoQuhEs6kg",
+        "https://www.youtube.com/watch?v=uPRQnQxsL3E",
+        "https://www.youtube.com/watch?v=5X5v7vRYQjc"
+      ],
+      "checkedAt": "2026-09-19T19:44:39.055Z",
       "httpStatus": 200,
       "visibleText": 16450
     },
@@ -436,8 +509,12 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:38.524Z",
+      "links": [
+        "https://www.investopedia.com/terms/c/cagr.asp",
+        "https://www.investopedia.com/terms/y/year-over-year.asp",
+        "https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
+      ],
+      "checkedAt": "2026-09-19T19:44:39.181Z",
       "httpStatus": 200,
       "visibleText": 5744
     },
@@ -452,8 +529,12 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:38.645Z",
+      "links": [
+        "https://www.berkshirehathaway.com/letters/2022ltr.pdf",
+        "https://www.berkshirehathaway.com/reports.html",
+        "https://www.sec.gov/cgi-bin/browse-edgar?company=berkshire+hathaway&CIK=&type=10-K&dateb=&owner=include&count=40&search_text=&action=getcompany"
+      ],
+      "checkedAt": "2026-09-19T19:44:39.356Z",
       "httpStatus": 200,
       "visibleText": 3893
     },
@@ -469,7 +550,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:38.834Z",
+      "checkedAt": "2026-09-19T19:44:39.418Z",
       "httpStatus": 200,
       "visibleText": 1431
     },
@@ -485,7 +566,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:39.124Z",
+      "checkedAt": "2026-09-19T19:44:39.775Z",
       "httpStatus": 200,
       "visibleText": 1360
     },
@@ -500,8 +581,22 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:39.368Z",
+      "links": [
+        "https://www.youtube.com/watch?v=bBC-nXj3Ng4",
+        "https://www.youtube.com/watch?v=M3EFi_POhps",
+        "https://www.youtube.com/watch?v=pWGLtjG-F5c",
+        "https://www.youtube.com/watch?v=pGzfexGmuVw",
+        "https://whiteboardcrypto.com/what-are-stablecoins/",
+        "https://www.youtube.com/watch?v=_160oMzblY8",
+        "https://andersbrownworth.com/blockchain/",
+        "https://www.stlouisfed.org/publications/review/2021/02/05/decentralized-finance-on-blockchain-and-smart-contract-based-financial-markets",
+        "https://berkeley-defi.github.io/assets/material/Fabian-Schar-decentralized-finance-on-blockchain-and-smart-contract-based-financial-markets.pdf",
+        "https://www.fidelity.com/learning-center/trading-investing/proof-of-work-vs-proof-of-stake",
+        "https://www.youtube.com/watch?v=5auv_xrvoJk",
+        "https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/",
+        "https://ethereum.org/developers/docs/standards/tokens/erc-20/"
+      ],
+      "checkedAt": "2026-09-19T19:44:40.140Z",
       "httpStatus": 200,
       "visibleText": 12852
     },
@@ -516,8 +611,12 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:39.897Z",
+      "links": [
+        "https://www.sec.gov/oiea/reports-and-publications/investor-publications/beginners-guide-financial-statements",
+        "https://www.investopedia.com/terms/b/balancesheet.asp",
+        "https://corporatefinanceinstitute.com/resources/accounting/balance-sheet/"
+      ],
+      "checkedAt": "2026-09-19T19:44:40.582Z",
       "httpStatus": 200,
       "visibleText": 7884
     },
@@ -536,7 +635,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:40.039Z",
+      "checkedAt": "2026-09-19T19:44:40.642Z",
       "httpStatus": 200,
       "visibleText": 17252
     },
@@ -552,7 +651,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:40.309Z",
+      "checkedAt": "2026-09-19T19:44:40.668Z",
       "httpStatus": 200,
       "visibleText": 1284
     },
@@ -568,7 +667,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:40.313Z",
+      "checkedAt": "2026-09-19T19:44:40.745Z",
       "httpStatus": 200,
       "visibleText": 1431
     },
@@ -583,8 +682,10 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:40.685Z",
+      "links": [
+        "https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
+      ],
+      "checkedAt": "2026-09-19T19:44:41.042Z",
       "httpStatus": 200,
       "visibleText": 11265
     },
@@ -600,7 +701,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:41.138Z",
+      "checkedAt": "2026-09-19T19:44:41.582Z",
       "httpStatus": 200,
       "visibleText": 1367
     },
@@ -619,7 +720,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:41.305Z",
+      "checkedAt": "2026-09-19T19:44:41.860Z",
       "httpStatus": 200,
       "visibleText": 7125
     },
@@ -635,7 +736,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:42.193Z",
+      "checkedAt": "2026-09-19T19:44:42.000Z",
       "httpStatus": 200,
       "visibleText": 1358
     },
@@ -651,7 +752,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:42.403Z",
+      "checkedAt": "2026-09-19T19:44:42.118Z",
       "httpStatus": 200,
       "visibleText": 3260
     },
@@ -667,7 +768,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:42.413Z",
+      "checkedAt": "2026-09-19T19:44:42.354Z",
       "httpStatus": 200,
       "visibleText": 6188
     },
@@ -682,8 +783,19 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:42.789Z",
+      "links": [
+        "https://metamask.io/",
+        "https://cloud.google.com/application/web3/faucet/ethereum/sepolia",
+        "https://wizard.openzeppelin.com/",
+        "https://remix.ethereum.org/",
+        "https://sepolia.etherscan.io/",
+        "https://metamask.io/download/",
+        "https://faucets.chain.link/sepolia",
+        "https://faucet.quicknode.com/ethereum/sepolia",
+        "https://etherscan.io/",
+        "https://etherscan.io/gastracker"
+      ],
+      "checkedAt": "2026-09-19T19:44:42.544Z",
       "httpStatus": 200,
       "visibleText": 14191
     },
@@ -699,7 +811,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:43.146Z",
+      "checkedAt": "2026-09-19T19:44:42.823Z",
       "httpStatus": 200,
       "visibleText": 1648
     },
@@ -714,8 +826,17 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:43.457Z",
+      "links": [
+        "https://www.federalreserve.gov/econres/notes/feds-notes/the-international-role-of-the-u-s-dollar-2025-edition-20250718.html",
+        "https://www.bis.org/statistics/rpfx22_fx.htm",
+        "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfh.txt",
+        "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/debt-to-the-penny",
+        "https://english.shanghai.gov.cn/en-FinancialReformandInnovation/20250108/0d5502fd008549f1bb306f5ccf1ffe7a.html",
+        "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2023",
+        "https://www.bis.org/about/bisih/topics/cbdc/mcbdc_bridge.htm",
+        "https://www.atlanticcouncil.org/programs/geoeconomics-center/dollar-dominance-monitor/"
+      ],
+      "checkedAt": "2026-09-19T19:44:43.323Z",
       "httpStatus": 200,
       "visibleText": 11768
     },
@@ -731,7 +852,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:44.043Z",
+      "checkedAt": "2026-09-19T19:44:43.620Z",
       "httpStatus": 200,
       "visibleText": 1331
     },
@@ -747,7 +868,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:44.142Z",
+      "checkedAt": "2026-09-19T19:44:43.688Z",
       "httpStatus": 200,
       "visibleText": 2278
     },
@@ -766,7 +887,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:44.638Z",
+      "checkedAt": "2026-09-19T19:44:43.909Z",
       "httpStatus": 200,
       "visibleText": 12063
     },
@@ -781,8 +902,12 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:45.248Z",
+      "links": [
+        "https://www.sec.gov/about/reports-publications/staff-report-equity-options-market-structure-conditions-early-2021",
+        "https://www.congress.gov/event/117th-congress/house-event/LC66883/text",
+        "https://www.npr.org/2021/02/18/968829355/gamestop-hearing-today-roaring-kitty-along-with-ceos-to-appear-before-congress"
+      ],
+      "checkedAt": "2026-09-19T19:44:44.296Z",
       "httpStatus": 200,
       "visibleText": 3515
     },
@@ -797,8 +922,16 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:45.514Z",
+      "links": [
+        "https://www.youtube.com/watch?v=rwbho0CgEAE",
+        "https://www.youtube.com/watch?v=Vl0H-qTclOg",
+        "https://www.youtube.com/watch?v=7V4xF3zCSoI",
+        "https://www.youtube.com/watch?v=Yx52CYvR5ao",
+        "https://www.youtube.com/watch?v=jPajIyavh_0",
+        "https://www.youtube.com/watch?v=-4yCXpv-drg",
+        "https://www.youtube.com/watch?v=iotrTlRT3q0"
+      ],
+      "checkedAt": "2026-09-19T19:44:44.750Z",
       "httpStatus": 200,
       "visibleText": 5795
     },
@@ -813,8 +946,14 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:45.623Z",
+      "links": [
+        "https://www.consumerfinance.gov/data-research/research-reports/data-point-credit-invisibles/",
+        "https://www.consumerfinance.gov/about-us/newsroom/cfpb-announces-first-no-action-letter-upstart-network/",
+        "https://www.worldbank.org/en/topic/financialinclusion/overview",
+        "https://www.brookings.edu/articles/an-ai-fair-lending-policy-agenda-for-the-federal-financial-regulators/",
+        "https://www.federalreserve.gov/econres/feds/files/2017056pap.pdf"
+      ],
+      "checkedAt": "2026-09-19T19:44:44.907Z",
       "httpStatus": 200,
       "visibleText": 4390
     },
@@ -830,7 +969,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-09-19T01:18:45.701Z",
+      "checkedAt": "2026-09-19T19:44:44.974Z",
       "httpStatus": 200,
       "visibleText": 1356
     },
@@ -841,12 +980,48 @@
         "FINAN VIII"
       ],
       "title": "Fintech Company Profiles",
-      "status": "OK",
+      "status": "WARN",
       "fails": [],
-      "warns": [],
+      "warns": [
+        "Outbound link is dead (HTTP 404): https://investors.block.xyz/financial-information/sec-filings",
+        "Outbound link is dead (HTTP 404): https://investors.sofi.com/financial-information/sec-filings",
+        "Outbound link is dead (HTTP 404): https://investors.toasttab.com/financial-information/sec-filings"
+      ],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:45.859Z",
+      "links": [
+        "https://stripe.com/newsroom",
+        "https://stripe.com/blog",
+        "https://stripe.com/docs",
+        "https://investors.block.xyz/financial-information/sec-filings",
+        "https://investors.block.xyz/",
+        "https://squareup.com/us/en/about",
+        "https://investors.sofi.com/financial-information/sec-filings",
+        "https://investors.sofi.com/",
+        "https://www.sofi.com/our-story/",
+        "https://ir.lendingclub.com/financials/sec-filings",
+        "https://ir.lendingclub.com/",
+        "https://www.lendingclub.com/company/about-us",
+        "https://investors.affirm.com/financial-information/sec-filings",
+        "https://investors.affirm.com/",
+        "https://www.affirm.com/business",
+        "https://www.chime.com/about-us/",
+        "https://www.chime.com/blog/",
+        "https://efts.sec.gov/LATEST/search?q=%22chime+financial%22&forms=S-1",
+        "https://www.revolut.com/en-US/news/",
+        "https://www.revolut.com/about-revolut/",
+        "https://www.revolut.com/blog/",
+        "https://plaid.com/company/",
+        "https://plaid.com/resources",
+        "https://plaid.com/docs/",
+        "https://www.justice.gov/opa/pr/visa-and-plaid-abandon-merger-after-antitrust-division-s-suit-block",
+        "https://investors.marqeta.com/financial-filings/sec-filings",
+        "https://investors.marqeta.com/",
+        "https://www.marqeta.com/platform",
+        "https://investors.toasttab.com/financial-information/sec-filings",
+        "https://investors.toasttab.com/",
+        "https://pos.toasttab.com/about"
+      ],
+      "checkedAt": "2026-09-19T19:44:45.208Z",
       "httpStatus": 200,
       "visibleText": 2643
     },
@@ -861,8 +1036,13 @@
       "fails": [],
       "warns": [],
       "selfCheck": null,
-      "links": [],
-      "checkedAt": "2026-09-19T01:18:46.755Z",
+      "links": [
+        "https://www.sec.gov/oiea/reports-and-publications/investor-publications/beginners-guide-financial-statements",
+        "https://www.bench.co/blog/accounting/how-to-read-income-statement",
+        "https://www.britannica.com/money/profit-margin-types",
+        "https://corporatefinanceinstitute.com/resources/accounting/profit-margin/"
+      ],
+      "checkedAt": "2026-09-19T19:44:45.583Z",
       "httpStatus": 200,
       "visibleText": 8164
     }
