@@ -57,6 +57,20 @@ primary detector.
 Failures also fail the scheduled GitHub run, which emails the repo owner, and post to
 Slack if a `SLACK_WEBHOOK` secret is set.
 
+## Activating the schedule (one command, once)
+
+The workflow lives at `workflow/check.yml` and is not yet active, because moving a file
+into `.github/workflows/` needs a GitHub token with `workflow` scope. To turn it on:
+
+```bash
+gh auth refresh -h github.com -s workflow    # opens a browser once
+git mv workflow/check.yml .github/workflows/check.yml
+git commit -m "Activate the scheduled check" && git push
+```
+
+Repo settings that are already done: Pages serves `/docs` from `main`, and Actions has
+write permission so the workflow can commit the status board back.
+
 ## When it runs
 
 - on every push to the pages repo
