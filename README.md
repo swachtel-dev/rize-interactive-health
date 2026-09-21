@@ -76,9 +76,18 @@ browser once: `gh auth refresh -h github.com -s workflow`.
   students arrive rather than during week one
 - on demand, from the Actions tab
 
+## When a run fails
+
+Read [TRIAGE.md](TRIAGE.md). Every run writes a summary naming the failure class:
+a **content failure** (a page students use is broken, fix the page) or an
+**infrastructure failure** (the pages are fine, the run itself broke, usually just
+re-run). They need opposite responses, so the summary says which before you start
+investigating.
+
 ## Layout
 
 ```
+TRIAGE.md               what to do when a run fails; read this first
 manifest.json           what gets checked, and which course each page serves
 scripts/check.mjs       the checker (Playwright; ~230 lines, the whole engine)
 scripts/render_status.mjs   builds the status board from results.json
