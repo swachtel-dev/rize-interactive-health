@@ -625,6 +625,19 @@
       "expect": {
         "minVisibleText": 300
       }
+    },
+    {
+      "id": "calc1-chain-rule",
+      "url": "https://rizecomputerscience.github.io/calc1-chain-rule/",
+      "courses": [
+        "MATHS I"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
