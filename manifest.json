@@ -638,6 +638,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "calc1-speed-at-an-instant",
+      "url": "https://rizecomputerscience.github.io/calc1-speed-at-an-instant/",
+      "courses": [
+        "MATHS I"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
