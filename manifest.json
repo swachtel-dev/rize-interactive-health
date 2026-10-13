@@ -768,6 +768,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "calc1-preparing-for-your-midterm",
+      "url": "https://rizecomputerscience.github.io/calc1-preparing-for-your-midterm/",
+      "courses": [
+        "MATHS I"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
