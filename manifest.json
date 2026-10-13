@@ -664,6 +664,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "calc1-continuity-checker",
+      "url": "https://rizecomputerscience.github.io/calc1-continuity-checker/",
+      "courses": [
+        "MATHS I"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
