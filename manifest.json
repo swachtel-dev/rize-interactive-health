@@ -742,6 +742,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "calc1-adding-up",
+      "url": "https://rizecomputerscience.github.io/calc1-adding-up/",
+      "courses": [
+        "MATHS I"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
