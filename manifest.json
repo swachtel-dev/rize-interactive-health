@@ -924,6 +924,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "diffeq1-slope-fields-euler",
+      "url": "https://rizecomputerscience.github.io/diffeq1-slope-fields-euler/",
+      "courses": [
+        "MATHS X"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
