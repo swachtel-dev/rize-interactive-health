@@ -937,6 +937,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "linalg-practice-final",
+      "url": "https://swachtel-dev.github.io/linalg-practice-final/",
+      "courses": [
+        "MATHS VII"
+      ],
+      "owner": "swachtel-dev",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
