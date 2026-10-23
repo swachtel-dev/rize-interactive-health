@@ -952,6 +952,32 @@
       }
     },
     {
+      "id": "calc2-practice-final",
+      "url": "https://swachtel-dev.github.io/calc2-practice-final/",
+      "courses": [
+        "MATHS II"
+      ],
+      "owner": "swachtel-dev",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
+    },
+    {
+      "id": "calc3-practice-final",
+      "url": "https://swachtel-dev.github.io/calc3-practice-final/",
+      "courses": [
+        "MATHS V"
+      ],
+      "owner": "swachtel-dev",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
+    },
+    {
       "id": "diffeq1-phase-lines-harvesting",
       "url": "https://rizecomputerscience.github.io/diffeq1-phase-lines-harvesting/",
       "courses": [
