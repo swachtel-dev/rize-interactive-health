@@ -976,6 +976,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "diffeq1-heat-spread",
+      "url": "https://rizecomputerscience.github.io/diffeq1-heat-spread/",
+      "courses": [
+        "MATHS X"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
