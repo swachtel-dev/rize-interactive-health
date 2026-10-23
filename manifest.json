@@ -1002,6 +1002,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "diffeq1-pendulum-nonlinear",
+      "url": "https://rizecomputerscience.github.io/diffeq1-pendulum-nonlinear/",
+      "courses": [
+        "MATHS X"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
