@@ -1132,6 +1132,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "diffeq1-practice-unit-09",
+      "url": "https://rizecomputerscience.github.io/diffeq1-practice-unit-09/",
+      "courses": [
+        "MATHS X"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
