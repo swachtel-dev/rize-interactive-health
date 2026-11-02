@@ -1184,6 +1184,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "finan4-site-selection-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-site-selection-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
