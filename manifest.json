@@ -1197,6 +1197,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "finan4-offer-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-offer-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
