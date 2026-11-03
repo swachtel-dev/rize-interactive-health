@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated": "2026-11-02T21:35:29.267Z",
-    "total": 97,
+    "generated": "2026-11-03T18:16:24.360Z",
+    "total": 98,
     "fail": 0,
-    "warn": 9,
-    "ok": 88,
-    "deadLinks": 5
+    "warn": 8,
+    "ok": 90,
+    "deadLinks": 4
   },
   "results": [
     {
@@ -20,7 +20,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:25.823Z",
+      "checkedAt": "2026-11-03T18:15:22.798Z",
       "httpStatus": 200,
       "visibleText": 1327
     },
@@ -41,7 +41,7 @@
         "https://www.investopedia.com/terms/1/10-k.asp",
         "https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-stateme"
       ],
-      "checkedAt": "2026-11-02T21:34:25.823Z",
+      "checkedAt": "2026-11-03T18:15:22.798Z",
       "httpStatus": 200,
       "visibleText": 6664
     },
@@ -57,7 +57,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:25.823Z",
+      "checkedAt": "2026-11-03T18:15:22.798Z",
       "httpStatus": 200,
       "visibleText": 2603
     },
@@ -75,7 +75,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:25.823Z",
+      "checkedAt": "2026-11-03T18:15:22.798Z",
       "httpStatus": 200,
       "visibleText": 14866
     },
@@ -93,7 +93,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:25.823Z",
+      "checkedAt": "2026-11-03T18:15:22.798Z",
       "httpStatus": 200,
       "visibleText": 13697
     },
@@ -109,7 +109,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:25.823Z",
+      "checkedAt": "2026-11-03T18:15:22.798Z",
       "httpStatus": 200,
       "visibleText": 5716
     },
@@ -137,7 +137,7 @@
         "https://www.youtube.com/watch?v=9jLlOPqHxLs",
         "https://www.youtube.com/watch?v=GMNcJ0pXAY8"
       ],
-      "checkedAt": "2026-11-02T21:34:27.222Z",
+      "checkedAt": "2026-11-03T18:15:24.215Z",
       "httpStatus": 200,
       "visibleText": 14979
     },
@@ -153,7 +153,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:27.260Z",
+      "checkedAt": "2026-11-03T18:15:24.230Z",
       "httpStatus": 200,
       "visibleText": 1367
     },
@@ -169,7 +169,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:27.371Z",
+      "checkedAt": "2026-11-03T18:15:24.549Z",
       "httpStatus": 200,
       "visibleText": 2073
     },
@@ -185,7 +185,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:27.402Z",
+      "checkedAt": "2026-11-03T18:15:24.583Z",
       "httpStatus": 200,
       "visibleText": 2464
     },
@@ -201,7 +201,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:27.524Z",
+      "checkedAt": "2026-11-03T18:15:24.843Z",
       "httpStatus": 200,
       "visibleText": 1397
     },
@@ -217,7 +217,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:27.568Z",
+      "checkedAt": "2026-11-03T18:15:24.906Z",
       "httpStatus": 200,
       "visibleText": 2535
     },
@@ -258,7 +258,7 @@
         "https://makerdao.com/en/whitepaper/",
         "https://daistats.com/"
       ],
-      "checkedAt": "2026-11-02T21:34:28.973Z",
+      "checkedAt": "2026-11-03T18:15:25.651Z",
       "httpStatus": 200,
       "visibleText": 6946
     },
@@ -278,7 +278,7 @@
         "https://corporatefinanceinstitute.com/resources/accounting/statement-of-cash-flows/",
         "https://www.investopedia.com/investing/what-is-a-cash-flow-statement/"
       ],
-      "checkedAt": "2026-11-02T21:34:28.986Z",
+      "checkedAt": "2026-11-03T18:15:25.877Z",
       "httpStatus": 200,
       "visibleText": 14897
     },
@@ -294,7 +294,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:29.016Z",
+      "checkedAt": "2026-11-03T18:15:26.075Z",
       "httpStatus": 200,
       "visibleText": 18199
     },
@@ -310,7 +310,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:29.069Z",
+      "checkedAt": "2026-11-03T18:15:26.163Z",
       "httpStatus": 200,
       "visibleText": 5251
     },
@@ -326,7 +326,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:29.101Z",
+      "checkedAt": "2026-11-03T18:15:26.342Z",
       "httpStatus": 200,
       "visibleText": 1350
     },
@@ -342,7 +342,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:29.169Z",
+      "checkedAt": "2026-11-03T18:15:26.415Z",
       "httpStatus": 200,
       "visibleText": 6493
     },
@@ -358,7 +358,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:30.255Z",
+      "checkedAt": "2026-11-03T18:15:26.928Z",
       "httpStatus": 200,
       "visibleText": 9222
     },
@@ -386,7 +386,7 @@
         "https://www.piie.com/blogs/realtime-economics/2026/china-gives-state-backed-digital-cash-us-and-europe-should-take-note",
         "https://www.bis.org/publ/bppdf/bispap159.htm"
       ],
-      "checkedAt": "2026-11-02T21:34:30.280Z",
+      "checkedAt": "2026-11-03T18:15:27.128Z",
       "httpStatus": 200,
       "visibleText": 14202
     },
@@ -402,7 +402,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:30.318Z",
+      "checkedAt": "2026-11-03T18:15:27.362Z",
       "httpStatus": 200,
       "visibleText": 1408
     },
@@ -422,7 +422,7 @@
         "https://actuary.org/article/unmasking-hidden-bias/",
         "https://fortune.com/2021/05/26/lemonade-insurance-ai-face-scanning-fraud/"
       ],
-      "checkedAt": "2026-11-02T21:34:30.351Z",
+      "checkedAt": "2026-11-03T18:15:27.426Z",
       "httpStatus": 200,
       "visibleText": 19366
     },
@@ -441,7 +441,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:30.477Z",
+      "checkedAt": "2026-11-03T18:15:27.675Z",
       "httpStatus": 200,
       "visibleText": 10800
     },
@@ -457,7 +457,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:30.806Z",
+      "checkedAt": "2026-11-03T18:15:27.950Z",
       "httpStatus": 200,
       "visibleText": 1445
     },
@@ -488,7 +488,7 @@
         "https://www.youtube.com/watch?v=uPRQnQxsL3E",
         "https://www.youtube.com/watch?v=5X5v7vRYQjc"
       ],
-      "checkedAt": "2026-11-02T21:34:31.630Z",
+      "checkedAt": "2026-11-03T18:15:28.407Z",
       "httpStatus": 200,
       "visibleText": 16450
     },
@@ -508,7 +508,7 @@
         "https://www.investopedia.com/terms/y/year-over-year.asp",
         "https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
       ],
-      "checkedAt": "2026-11-02T21:34:31.808Z",
+      "checkedAt": "2026-11-03T18:15:28.708Z",
       "httpStatus": 200,
       "visibleText": 5744
     },
@@ -528,7 +528,7 @@
         "https://www.berkshirehathaway.com/reports.html",
         "https://www.sec.gov/cgi-bin/browse-edgar?company=berkshire+hathaway&CIK=&type=10-K&dateb=&owner=include&count=40&search_text=&action=getcompany"
       ],
-      "checkedAt": "2026-11-02T21:34:31.832Z",
+      "checkedAt": "2026-11-03T18:15:28.733Z",
       "httpStatus": 200,
       "visibleText": 3893
     },
@@ -544,7 +544,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:31.873Z",
+      "checkedAt": "2026-11-03T18:15:28.887Z",
       "httpStatus": 200,
       "visibleText": 1431
     },
@@ -560,7 +560,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:32.327Z",
+      "checkedAt": "2026-11-03T18:15:29.471Z",
       "httpStatus": 200,
       "visibleText": 1360
     },
@@ -592,7 +592,7 @@
         "https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/",
         "https://ethereum.org/developers/docs/standards/tokens/erc-20/"
       ],
-      "checkedAt": "2026-11-02T21:34:32.522Z",
+      "checkedAt": "2026-11-03T18:15:29.542Z",
       "httpStatus": 200,
       "visibleText": 12852
     },
@@ -612,7 +612,7 @@
         "https://www.investopedia.com/terms/b/balancesheet.asp",
         "https://corporatefinanceinstitute.com/resources/accounting/balance-sheet/"
       ],
-      "checkedAt": "2026-11-02T21:34:33.063Z",
+      "checkedAt": "2026-11-03T18:15:29.990Z",
       "httpStatus": 200,
       "visibleText": 7884
     },
@@ -631,7 +631,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:33.153Z",
+      "checkedAt": "2026-11-03T18:15:30.023Z",
       "httpStatus": 200,
       "visibleText": 17252
     },
@@ -647,7 +647,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:33.308Z",
+      "checkedAt": "2026-11-03T18:15:30.044Z",
       "httpStatus": 200,
       "visibleText": 1284
     },
@@ -663,7 +663,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:33.362Z",
+      "checkedAt": "2026-11-03T18:15:30.218Z",
       "httpStatus": 200,
       "visibleText": 1431
     },
@@ -681,7 +681,7 @@
       "links": [
         "https://support.microsoft.com/en-us/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2"
       ],
-      "checkedAt": "2026-11-02T21:34:33.741Z",
+      "checkedAt": "2026-11-03T18:15:30.765Z",
       "httpStatus": 200,
       "visibleText": 11265
     },
@@ -697,7 +697,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:34.012Z",
+      "checkedAt": "2026-11-03T18:15:31.072Z",
       "httpStatus": 200,
       "visibleText": 1367
     },
@@ -716,7 +716,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:34.351Z",
+      "checkedAt": "2026-11-03T18:15:31.272Z",
       "httpStatus": 200,
       "visibleText": 7125
     },
@@ -732,7 +732,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:34.640Z",
+      "checkedAt": "2026-11-03T18:15:31.367Z",
       "httpStatus": 200,
       "visibleText": 1358
     },
@@ -748,7 +748,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:34.722Z",
+      "checkedAt": "2026-11-03T18:15:31.579Z",
       "httpStatus": 200,
       "visibleText": 3260
     },
@@ -764,7 +764,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:34.955Z",
+      "checkedAt": "2026-11-03T18:15:31.788Z",
       "httpStatus": 200,
       "visibleText": 6188
     },
@@ -791,7 +791,7 @@
         "https://etherscan.io/",
         "https://etherscan.io/gastracker"
       ],
-      "checkedAt": "2026-11-02T21:34:35.033Z",
+      "checkedAt": "2026-11-03T18:15:32.173Z",
       "httpStatus": 200,
       "visibleText": 14191
     },
@@ -807,7 +807,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:35.302Z",
+      "checkedAt": "2026-11-03T18:15:32.374Z",
       "httpStatus": 200,
       "visibleText": 1648
     },
@@ -818,11 +818,9 @@
         "FINAN VIII"
       ],
       "title": "De-dollarization Primer · FINAN VIII",
-      "status": "WARN",
+      "status": "OK",
       "fails": [],
-      "warns": [
-        "Outbound link is dead (HTTP 0): https://english.shanghai.gov.cn/en-FinancialReformandInnovation/20250108/0d5502fd008549f1bb306f5ccf1ffe7a.html"
-      ],
+      "warns": [],
       "selfCheck": null,
       "links": [
         "https://www.federalreserve.gov/econres/notes/feds-notes/the-international-role-of-the-u-s-dollar-2025-edition-20250718.html",
@@ -834,7 +832,7 @@
         "https://www.bis.org/about/bisih/topics/cbdc/mcbdc_bridge.htm",
         "https://www.atlanticcouncil.org/programs/geoeconomics-center/dollar-dominance-monitor/"
       ],
-      "checkedAt": "2026-11-02T21:34:35.989Z",
+      "checkedAt": "2026-11-03T18:15:32.732Z",
       "httpStatus": 200,
       "visibleText": 11768
     },
@@ -850,7 +848,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:36.304Z",
+      "checkedAt": "2026-11-03T18:15:33.059Z",
       "httpStatus": 200,
       "visibleText": 1331
     },
@@ -866,7 +864,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:36.322Z",
+      "checkedAt": "2026-11-03T18:15:33.097Z",
       "httpStatus": 200,
       "visibleText": 2278
     },
@@ -885,7 +883,7 @@
       ],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:36.393Z",
+      "checkedAt": "2026-11-03T18:15:33.158Z",
       "httpStatus": 200,
       "visibleText": 12063
     },
@@ -905,7 +903,7 @@
         "https://www.congress.gov/event/117th-congress/house-event/LC66883/text",
         "https://www.npr.org/2021/02/18/968829355/gamestop-hearing-today-roaring-kitty-along-with-ceos-to-appear-before-congress"
       ],
-      "checkedAt": "2026-11-02T21:34:36.578Z",
+      "checkedAt": "2026-11-03T18:15:33.915Z",
       "httpStatus": 200,
       "visibleText": 3515
     },
@@ -929,7 +927,7 @@
         "https://www.youtube.com/watch?v=-4yCXpv-drg",
         "https://www.youtube.com/watch?v=iotrTlRT3q0"
       ],
-      "checkedAt": "2026-11-02T21:34:36.809Z",
+      "checkedAt": "2026-11-03T18:15:33.965Z",
       "httpStatus": 200,
       "visibleText": 5795
     },
@@ -951,7 +949,7 @@
         "https://www.brookings.edu/articles/an-ai-fair-lending-policy-agenda-for-the-federal-financial-regulators/",
         "https://www.federalreserve.gov/econres/feds/files/2017056pap.pdf"
       ],
-      "checkedAt": "2026-11-02T21:34:37.481Z",
+      "checkedAt": "2026-11-03T18:15:34.226Z",
       "httpStatus": 200,
       "visibleText": 4390
     },
@@ -967,7 +965,7 @@
       "warns": [],
       "selfCheck": null,
       "links": [],
-      "checkedAt": "2026-11-02T21:34:37.630Z",
+      "checkedAt": "2026-11-03T18:15:34.365Z",
       "httpStatus": 200,
       "visibleText": 1356
     },
@@ -1019,7 +1017,7 @@
         "https://investors.toasttab.com/",
         "https://pos.toasttab.com/about"
       ],
-      "checkedAt": "2026-11-02T21:34:37.676Z",
+      "checkedAt": "2026-11-03T18:15:34.391Z",
       "httpStatus": 200,
       "visibleText": 2643
     },
@@ -1040,7 +1038,7 @@
         "https://www.britannica.com/money/profit-margin-types",
         "https://corporatefinanceinstitute.com/resources/accounting/profit-margin/"
       ],
-      "checkedAt": "2026-11-02T21:34:38.076Z",
+      "checkedAt": "2026-11-03T18:15:34.847Z",
       "httpStatus": 200,
       "visibleText": 8164
     },
@@ -1078,7 +1076,7 @@
         "https://tutorial.math.lamar.edu/Classes/CalcI/ChainRule.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/DiffExpLogFcns.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:38.099Z",
+      "checkedAt": "2026-11-03T18:15:35.251Z",
       "httpStatus": 200,
       "visibleText": 5380
     },
@@ -1155,7 +1153,7 @@
         "https://tutorial.math.lamar.edu/Classes/CalcI/Tangents_Rates.aspx",
         "https://openstax.org/books/calculus-volume-1/pages/2-1-a-preview-of-calculus"
       ],
-      "checkedAt": "2026-11-02T21:34:38.156Z",
+      "checkedAt": "2026-11-03T18:15:35.403Z",
       "httpStatus": 200,
       "visibleText": 9235
     },
@@ -1254,7 +1252,7 @@
         "https://tutorial.math.lamar.edu/Classes/CalcI/Tangents_Rates.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/DefnOfDerivative.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:38.963Z",
+      "checkedAt": "2026-11-03T18:15:35.715Z",
       "httpStatus": 200,
       "visibleText": 3400
     },
@@ -1337,7 +1335,7 @@
         "https://tutorial.math.lamar.edu/Classes/CalcI/Continuity.aspx",
         "https://tutorial.math.lamar.edu/Problems/CalcI/Continuity.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:39.011Z",
+      "checkedAt": "2026-11-03T18:15:35.760Z",
       "httpStatus": 200,
       "visibleText": 3098
     },
@@ -1431,7 +1429,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/DerivativeInterp.aspx",
         "https://tutorial.math.lamar.edu/Problems/CalcI/ShapeofGraphPtI.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:39.216Z",
+      "checkedAt": "2026-11-03T18:15:35.843Z",
       "httpStatus": 200,
       "visibleText": 4333
     },
@@ -1519,7 +1517,7 @@
         "https://tutorial.math.lamar.edu/Classes/CalcI/Differentials.aspx",
         "https://tutorial.math.lamar.edu/Problems/CalcI/LinearApproximations.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:39.374Z",
+      "checkedAt": "2026-11-03T18:15:36.121Z",
       "httpStatus": 200,
       "visibleText": 3256
     },
@@ -1610,7 +1608,7 @@
         "https://tutorial.math.lamar.edu/Classes/CalcI/RelatedRates.aspx",
         "https://tutorial.math.lamar.edu/Problems/CalcI/RelatedRates.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:39.953Z",
+      "checkedAt": "2026-11-03T18:15:37.064Z",
       "httpStatus": 200,
       "visibleText": 3945
     },
@@ -1689,7 +1687,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/ShapeofGraphPtI.aspx",
         "https://tutorial.math.lamar.edu/Problems/CalcI/ShapeofGraphPtII.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:40.002Z",
+      "checkedAt": "2026-11-03T18:15:37.173Z",
       "httpStatus": 200,
       "visibleText": 3015
     },
@@ -1780,7 +1778,7 @@
         "https://tutorial.math.lamar.edu/Classes/CalcI/Optimization.aspx",
         "https://tutorial.math.lamar.edu/Problems/CalcI/Optimization.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:40.679Z",
+      "checkedAt": "2026-11-03T18:15:37.346Z",
       "httpStatus": 200,
       "visibleText": 3745
     },
@@ -1861,7 +1859,7 @@
         "https://www.desmos.com/scientific",
         "https://tutorial.math.lamar.edu/Problems/CalcI/AreaProblem.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:40.810Z",
+      "checkedAt": "2026-11-03T18:15:37.502Z",
       "httpStatus": 200,
       "visibleText": 3735
     },
@@ -1950,7 +1948,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/AvgFcnValue.aspx",
         "https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem"
       ],
-      "checkedAt": "2026-11-02T21:34:40.928Z",
+      "checkedAt": "2026-11-03T18:15:37.527Z",
       "httpStatus": 200,
       "visibleText": 4078
     },
@@ -2054,7 +2052,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/CalcI.aspx",
         "https://tutorial.math.lamar.edu/Extras/CommonErrors/CommonMathErrors.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:41.131Z",
+      "checkedAt": "2026-11-03T18:15:37.751Z",
       "httpStatus": 200,
       "visibleText": 17400
     },
@@ -2139,7 +2137,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/Functions.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/Tangents_Rates.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:41.648Z",
+      "checkedAt": "2026-11-03T18:15:38.806Z",
       "httpStatus": 200,
       "visibleText": 3619
     },
@@ -2231,7 +2229,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/OneSidedLimits.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:41.714Z",
+      "checkedAt": "2026-11-03T18:15:38.820Z",
       "httpStatus": 200,
       "visibleText": 3481
     },
@@ -2320,7 +2318,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/LimitsAtInfinityI.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/Continuity.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:42.393Z",
+      "checkedAt": "2026-11-03T18:15:39.050Z",
       "httpStatus": 200,
       "visibleText": 3482
     },
@@ -2418,7 +2416,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/DerivativeInterp.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/DiffFormulas.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:42.530Z",
+      "checkedAt": "2026-11-03T18:15:39.182Z",
       "httpStatus": 200,
       "visibleText": 3264
     },
@@ -2513,7 +2511,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/HigherOrderDerivatives.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/DiffExpLogFcns.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:42.655Z",
+      "checkedAt": "2026-11-03T18:15:39.317Z",
       "httpStatus": 200,
       "visibleText": 3080
     },
@@ -2614,7 +2612,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/LinearApproximations.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/RelatedRates.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:42.859Z",
+      "checkedAt": "2026-11-03T18:15:39.524Z",
       "httpStatus": 200,
       "visibleText": 3165
     },
@@ -2710,7 +2708,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/LHospitalsRule.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/RateOfChange.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:43.347Z",
+      "checkedAt": "2026-11-03T18:15:40.520Z",
       "httpStatus": 200,
       "visibleText": 3024
     },
@@ -2807,7 +2805,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/MeanValueTheorem.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/Optimization.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:43.417Z",
+      "checkedAt": "2026-11-03T18:15:40.596Z",
       "httpStatus": 200,
       "visibleText": 3824
     },
@@ -2893,7 +2891,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/MoreOptimization.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/IndefiniteIntegrals.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:44.081Z",
+      "checkedAt": "2026-11-03T18:15:40.712Z",
       "httpStatus": 200,
       "visibleText": 4346
     },
@@ -2988,7 +2986,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/ComputingDefiniteIntegrals.aspx",
         "https://tutorial.math.lamar.edu/Classes/CalcI/Differentials.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:44.358Z",
+      "checkedAt": "2026-11-03T18:15:40.972Z",
       "httpStatus": 200,
       "visibleText": 3633
     },
@@ -3083,7 +3081,7 @@
         "https://tutorial.math.lamar.edu/Problems/CalcI/SubstitutionRuleDefinite.aspx",
         "https://tutorial.math.lamar.edu/Problems/CalcI/AvgFcnValue.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:44.483Z",
+      "checkedAt": "2026-11-03T18:15:41.067Z",
       "httpStatus": 200,
       "visibleText": 2973
     },
@@ -3178,7 +3176,7 @@
         "https://tutorial.math.lamar.edu/Classes/DE/DirectionFields.aspx",
         "https://tutorial.math.lamar.edu/Classes/DE/EulersMethod.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:44.608Z",
+      "checkedAt": "2026-11-03T18:15:41.265Z",
       "httpStatus": 200,
       "visibleText": 3774
     },
@@ -3226,7 +3224,7 @@
         ]
       },
       "links": [],
-      "checkedAt": "2026-11-02T21:34:45.052Z",
+      "checkedAt": "2026-11-03T18:15:42.321Z",
       "httpStatus": 200,
       "visibleText": 8139
     },
@@ -3274,7 +3272,7 @@
         ]
       },
       "links": [],
-      "checkedAt": "2026-11-02T21:34:45.272Z",
+      "checkedAt": "2026-11-03T18:15:42.338Z",
       "httpStatus": 200,
       "visibleText": 6802
     },
@@ -3322,7 +3320,7 @@
         ]
       },
       "links": [],
-      "checkedAt": "2026-11-02T21:34:45.900Z",
+      "checkedAt": "2026-11-03T18:15:42.451Z",
       "httpStatus": 200,
       "visibleText": 7015
     },
@@ -3422,7 +3420,7 @@
         ]
       },
       "links": [],
-      "checkedAt": "2026-11-02T21:34:46.074Z",
+      "checkedAt": "2026-11-03T18:15:42.706Z",
       "httpStatus": 200,
       "visibleText": 4461
     },
@@ -3530,7 +3528,7 @@
         ]
       },
       "links": [],
-      "checkedAt": "2026-11-02T21:34:46.140Z",
+      "checkedAt": "2026-11-03T18:15:42.777Z",
       "httpStatus": 200,
       "visibleText": 6406
     },
@@ -3633,7 +3631,7 @@
         "https://www.youtube.com/watch?v=ToIXSwZ1pJU",
         "https://www.jirka.org/diffyqs/html/heateq_section.html"
       ],
-      "checkedAt": "2026-11-02T21:34:46.461Z",
+      "checkedAt": "2026-11-03T18:15:43.152Z",
       "httpStatus": 200,
       "visibleText": 6433
     },
@@ -3725,7 +3723,7 @@
         ]
       },
       "links": [],
-      "checkedAt": "2026-11-02T21:34:46.758Z",
+      "checkedAt": "2026-11-03T18:15:44.035Z",
       "httpStatus": 200,
       "visibleText": 5059
     },
@@ -3825,7 +3823,7 @@
         ]
       },
       "links": [],
-      "checkedAt": "2026-11-02T21:34:47.133Z",
+      "checkedAt": "2026-11-03T18:15:44.329Z",
       "httpStatus": 200,
       "visibleText": 4749
     },
@@ -3934,7 +3932,7 @@
         "https://tutorial.math.lamar.edu/Classes/DE/Linear.aspx",
         "https://www.jirka.org/diffyqs/html/intfactor_section.html"
       ],
-      "checkedAt": "2026-11-02T21:34:47.636Z",
+      "checkedAt": "2026-11-03T18:15:44.476Z",
       "httpStatus": 200,
       "visibleText": 4168
     },
@@ -4043,7 +4041,7 @@
         "https://www.jirka.org/diffyqs/html/auteq_section.html",
         "https://www.jirka.org/diffyqs/html/slopefields_section.html"
       ],
-      "checkedAt": "2026-11-02T21:34:47.919Z",
+      "checkedAt": "2026-11-03T18:15:44.494Z",
       "httpStatus": 200,
       "visibleText": 4342
     },
@@ -4152,7 +4150,7 @@
         "https://tutorial.math.lamar.edu/Classes/DE/Separable.aspx",
         "https://tutorial.math.lamar.edu/Classes/DE/EulersMethod.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:48.306Z",
+      "checkedAt": "2026-11-03T18:15:44.873Z",
       "httpStatus": 200,
       "visibleText": 4839
     },
@@ -4263,7 +4261,7 @@
         "https://tutorial.math.lamar.edu/Classes/DE/ComplexRoots.aspx",
         "https://tutorial.math.lamar.edu/Classes/DE/RepeatedRoots.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:48.500Z",
+      "checkedAt": "2026-11-03T18:15:45.064Z",
       "httpStatus": 200,
       "visibleText": 4498
     },
@@ -4372,7 +4370,7 @@
         "https://tutorial.math.lamar.edu/Classes/DE/DirectionFields.aspx",
         "https://www.jirka.org/diffyqs/html/introde_section.html"
       ],
-      "checkedAt": "2026-11-02T21:34:48.506Z",
+      "checkedAt": "2026-11-03T18:15:45.841Z",
       "httpStatus": 200,
       "visibleText": 4245
     },
@@ -4481,7 +4479,7 @@
         "https://tutorial.math.lamar.edu/Classes/DE/Vibrations.aspx",
         "https://tutorial.math.lamar.edu/Classes/DE/UndeterminedCoefficients.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:49.021Z",
+      "checkedAt": "2026-11-03T18:15:46.178Z",
       "httpStatus": 200,
       "visibleText": 4137
     },
@@ -4601,7 +4599,7 @@
         "https://www.jirka.org/diffyqs/html/nlinstability_section.html",
         "https://www.jirka.org/diffyqs/html/nlinapps_section.html"
       ],
-      "checkedAt": "2026-11-02T21:34:49.403Z",
+      "checkedAt": "2026-11-03T18:15:46.278Z",
       "httpStatus": 200,
       "visibleText": 4733
     },
@@ -4724,7 +4722,7 @@
         "https://www.jirka.org/diffyqs/html/transformsofders_section.html",
         "https://tutorial.math.lamar.edu/Classes/DE/IVPWithStepFunction.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:49.688Z",
+      "checkedAt": "2026-11-03T18:15:46.315Z",
       "httpStatus": 200,
       "visibleText": 4538
     },
@@ -4834,7 +4832,7 @@
         "https://www.jirka.org/diffyqs/html/heateq_section.html",
         "https://tutorial.math.lamar.edu/Classes/DE/SolvingHeatEquation.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:50.086Z",
+      "checkedAt": "2026-11-03T18:15:46.584Z",
       "httpStatus": 200,
       "visibleText": 4880
     },
@@ -4971,7 +4969,7 @@
         "https://www.jirka.org/diffyqs/html/sec_twodimaut.html",
         "https://www.jirka.org/diffyqs/html/eigenmethod_section.html"
       ],
-      "checkedAt": "2026-11-02T21:34:50.275Z",
+      "checkedAt": "2026-11-03T18:15:46.972Z",
       "httpStatus": 200,
       "visibleText": 5232
     },
@@ -5083,7 +5081,7 @@
         "https://www.jirka.org/diffyqs/html/sec_nonhom.html#sec_nonhom-5",
         "https://tutorial.math.lamar.edu/Classes/DE/VariationofParameters.aspx"
       ],
-      "checkedAt": "2026-11-02T21:34:50.327Z",
+      "checkedAt": "2026-11-03T18:15:47.833Z",
       "httpStatus": 200,
       "visibleText": 4739
     },
@@ -5129,7 +5127,7 @@
       "links": [
         "https://www.desmos.com/scientific"
       ],
-      "checkedAt": "2026-11-02T21:34:50.661Z",
+      "checkedAt": "2026-11-03T18:15:48.022Z",
       "httpStatus": 200,
       "visibleText": 1615
     },
@@ -5171,9 +5169,51 @@
       "links": [
         "https://www.desmos.com/scientific"
       ],
-      "checkedAt": "2026-11-02T21:34:51.195Z",
+      "checkedAt": "2026-11-03T18:15:48.083Z",
       "httpStatus": 200,
       "visibleText": 1386
+    },
+    {
+      "id": "finan4-cash-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-cash-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "title": "The Cash Desk",
+      "status": "OK",
+      "fails": [],
+      "warns": [],
+      "selfCheck": {
+        "ok": true,
+        "checks": [
+          {
+            "name": "tasks generate for a test email",
+            "ok": true
+          },
+          {
+            "name": "each task accepts its own answer and rejects a wrong one",
+            "ok": true
+          },
+          {
+            "name": "calculator evaluates a discount factor",
+            "ok": true
+          },
+          {
+            "name": "a page view rendered",
+            "ok": true
+          },
+          {
+            "name": "receipt PNG round-trips its payload",
+            "ok": true
+          }
+        ]
+      },
+      "links": [
+        "https://www.desmos.com/scientific"
+      ],
+      "checkedAt": "2026-11-03T18:15:48.088Z",
+      "httpStatus": 200,
+      "visibleText": 1419
     }
   ]
 }
