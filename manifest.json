@@ -1210,6 +1210,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "finan4-cash-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-cash-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
