@@ -1275,6 +1275,32 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "finan4-valuation-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-valuation-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
+    },
+    {
+      "id": "finan4-hurdle-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-hurdle-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
