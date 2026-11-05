@@ -1236,6 +1236,32 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "finan4-cash-flow-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-cash-flow-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
+    },
+    {
+      "id": "finan4-scenario-desk",
+      "url": "https://rizecomputerscience.github.io/finan4-scenario-desk/",
+      "courses": [
+        "FINAN IV"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
