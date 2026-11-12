@@ -1327,6 +1327,19 @@
         "minVisibleText": 300,
         "selfCheck": true
       }
+    },
+    {
+      "id": "maths8-what-averaging-does",
+      "url": "https://rizecomputerscience.github.io/maths8-what-averaging-does/",
+      "courses": [
+        "MATHS VIII"
+      ],
+      "owner": "RizeComputerScience",
+      "source": "manual",
+      "expect": {
+        "minVisibleText": 300,
+        "selfCheck": true
+      }
     }
   ]
 }
